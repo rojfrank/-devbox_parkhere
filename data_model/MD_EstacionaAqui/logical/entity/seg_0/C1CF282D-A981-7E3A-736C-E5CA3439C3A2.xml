@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1CF282D-A981-7E3A-736C-E5CA3439C3A2" name="Estacionamiento">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:56:47 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Estacionamiento" id="F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:57:17 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Descriptivo" id="09097861-FAB2-9C61-9FF7-91B166BA8275">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:57:38 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Direccion" id="BA7B936B-BD78-7D90-A0D9-C5CD170843F0">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:58:02 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Distrito" id="EAADF2E5-6631-B462-0DAF-7638F1260993">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:58:52 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_DireccionGoogleMaps" id="84A2ADCC-0196-69D0-A82F-4C6A6BD0B682">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 22:59:19 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_TelefonoFijo" id="E7660DBB-A051-6C35-1117-84C97EC79454">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:00:02 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_PrecioPorHora" id="719B2559-8B28-E718-4F3C-B3CD133700CF">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:00:33 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Im_Foto" id="33B116ED-C3D3-246E-ACFD-1A45AB8E9D05">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:01:11 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_DimensionLargo" id="1BB02A04-44DF-AFED-1854-30E9D6A07B08">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:01:25 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_DimensionAncho" id="8B789B44-B748-9591-1BEF-6C119C85F6B3">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:02:53 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fl_Tipo" id="25A2B1D4-9F84-E452-DA34-09C588E87179">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:03:17 UTC</createdTime>
+<comment>interior, exterior, aire libre</comment>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Ubicacion" id="43327087-45BF-EEA1-0887-C5662C67CF89">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:03:57 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Usuario" id="49611D53-D7DE-5853-F080-64CF93FE8FD9">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:10:47 UTC</createdTime>
+<generatorID>987A4E3D-3569-EFFB-FA08-61DA28D9822C</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>ACFB40FE-F276-D442-165C-F3153BB652DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7690BB5C-CCAD-A9EC-D4A5-C588513F61C5" name="Estacionamiento PK">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:06:48 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

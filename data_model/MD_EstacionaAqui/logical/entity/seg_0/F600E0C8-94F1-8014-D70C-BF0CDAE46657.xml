@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F600E0C8-94F1-8014-D70C-BF0CDAE46657" name="Publicidad">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:29:21 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Publicidad" id="01B79D3E-25DC-E630-2F32-AFF83FC9B21E">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:29:39 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Titulo" id="AD641A38-9C38-B913-01A8-81F4E76EBC42">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:29:53 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_Inicio" id="7894C730-7FF9-9CA9-0181-CF6E19FE7441">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:30:37 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_Fin" id="F64BD179-F8FF-7F9C-A453-FF1F903BF1A4">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:30:54 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_Tarifa" id="2DBA464F-A56C-30C9-642A-FED8BCC7AA9C">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:31:05 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_UbicacionMostrar" id="A660D24D-FFD7-DA4A-63BB-85E6871F9DB9">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:31:24 UTC</createdTime>
+<comment>1: página principal, 2: páginas del cliente, 3: páginas del dueño</comment>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E853D854-05D1-B4CE-023F-172B703E760B" name="Publicidad PK">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:29:52 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>01B79D3E-25DC-E630-2F32-AFF83FC9B21E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F65415C5-DE26-9D38-CCCE-D23FA7CC839B" name="Alquiler">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:17:14 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Alquiler" id="29116EE6-4DA2-B6F5-1D37-76D028B77838">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:17:24 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_Fecha" id="5908896C-E0C7-CCD7-B5C4-7CE04B9A8FA5">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:17:38 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_Hora" id="4E1EA73F-63C4-6AAA-665B-C693BD227A57">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:18:26 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Puntuacion" id="B675DC9E-BBFC-FC52-9459-95CD1B866547">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:27:42 UTC</createdTime>
+<comment>1 al 5</comment>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_ComentarioPuntuacion" id="C2FE4574-AC84-E289-FF01-31CBE27B9CA9">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:28:08 UTC</createdTime>
+<comment>Opcional</comment>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D2F1369-4B26-516B-779C-B15DC91F0D20" name="Alquiler PK">
+<createdBy>rcastillo</createdBy>
+<createdTime>2018-03-23 23:21:37 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<engineerTo>
+<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>29116EE6-4DA2-B6F5-1D37-76D028B77838</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
