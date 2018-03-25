@@ -43,27 +43,25 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_Distrito" id="EAADF2E5-6631-B462-0DAF-7638F1260993">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 22:58:52 UTC</createdTime>
+<Attribute name="Nu_Longitud" id="003DAEA6-4AB0-28E6-36EF-DCCD9390C794">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:09:56 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_DireccionGoogleMaps" id="84A2ADCC-0196-69D0-A82F-4C6A6BD0B682">
+<Attribute name="Nu_Latitud" id="84A2ADCC-0196-69D0-A82F-4C6A6BD0B682">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 22:59:19 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="No_TelefonoFijo" id="E7660DBB-A051-6C35-1117-84C97EC79454">
 <createdBy>rcastillo</createdBy>
@@ -73,8 +71,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>8</dataTypeSize>
-<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nu_PrecioPorHora" id="719B2559-8B28-E718-4F3C-B3CD133700CF">
 <createdBy>rcastillo</createdBy>
@@ -144,6 +142,50 @@
 <generatorID>987A4E3D-3569-EFFB-FA08-61DA28D9822C</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <referedAttribute>ACFB40FE-F276-D442-165C-F3153BB652DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="co_imagen" id="36240DFA-A8BB-6CD8-CDA3-37A3DDEA96FF">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:32:30 UTC</createdTime>
+<generatorID>17FFE99A-2252-C177-702D-10DA40AC9EC9</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>99ACA9DC-5EAA-248A-E12D-3E0BC48A6EB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_TipoEstacionamiento" id="9AB0826B-DB03-CF41-F35F-9381A4E632F1">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:32:42 UTC</createdTime>
+<generatorID>E1FE2596-76DE-6969-3732-5207E6A65625</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>5C7A6EAD-F82C-CA03-70E2-0CA55EF070EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Distrito" id="F83A9848-F076-C6DC-248B-514937651BB0">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:36:55 UTC</createdTime>
+<generatorID>61AC1094-4492-B8B4-FC2A-1B2806154D3A</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>FF6BA2B8-A7C9-7405-B180-7F6296E4741F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_UbicacionEstacionamiento" id="90D92257-0C05-7C0D-C13C-5008C7846461">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:56:18 UTC</createdTime>
+<generatorID>8B354CAA-13E0-49AE-2215-C6755C8945F7</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>B2E9E0B1-F048-1E08-18FD-0E433D4C8BF3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

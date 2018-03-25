@@ -66,17 +66,6 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_TipoDocumento" id="5B5D516B-E98C-AF1F-141B-9FB3FE30A17F">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 22:35:54 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="No_Documento" id="59F6C56F-EC17-0EC6-0BA9-FED862178F29">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 22:36:38 UTC</createdTime>
@@ -87,17 +76,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>15</dataTypeSize>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="No_TipoUsuario" id="94D9776F-0CA2-EB0A-2D04-82AB0C8D63BD">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 22:37:24 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="No_Correo" id="4B4FC14A-991C-0AE5-58AC-66457DC55E69">
 <createdBy>rcastillo</createdBy>
@@ -163,6 +141,28 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Identidad" id="21D55D7B-6F10-C6A5-07DE-B661ECC26370">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:50:48 UTC</createdTime>
+<generatorID>E77892EF-8875-F8F0-243B-7656BD06202D</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>464F1A6A-D544-8107-9945-3555CE030273</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_TipoUsuario" id="187DEA83-B926-CBC1-A6F0-CE48B0C26596">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:51:06 UTC</createdTime>
+<generatorID>2F26C1AF-7294-2183-1C1F-75E8FCB59FE4</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>19F241DA-E20E-3183-89A7-91690C432C11</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F5B19BD-EFC5-9937-B33B-AA83302E9A20" name="Tipo_Usuarios">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:48:09 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TUsuarios</shortName>
+<synonym>Rol de usuario</synonym>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_TipoUsuario" id="19F241DA-E20E-3183-89A7-91690C432C11">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:49:38 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_TipoUsuario" id="6EFFB2CB-6714-017D-A759-7FC1081C5C16">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:49:39 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF53926B-CDA6-C1E8-6ACF-ABC1D77F0637" name="Tipo_Usuarios PK">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:50:24 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19F241DA-E20E-3183-89A7-91690C432C11</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

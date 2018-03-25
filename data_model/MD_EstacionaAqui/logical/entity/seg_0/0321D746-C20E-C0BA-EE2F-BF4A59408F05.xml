@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0321D746-C20E-C0BA-EE2F-BF4A59408F05" name="Tipos_Estacionamiento">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:27:51 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_TipoEstacionamiento" id="5C7A6EAD-F82C-CA03-70E2-0CA55EF070EA">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:28:10 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_TipoEstacionamiento" id="7BDE78E6-7867-6E81-901E-6E770478A89D">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:28:17 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9515F448-8867-3EAA-E925-F56AEB2AEC61" name="Tipos_Estacionamiento PK">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:31:30 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5C7A6EAD-F82C-CA03-70E2-0CA55EF070EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

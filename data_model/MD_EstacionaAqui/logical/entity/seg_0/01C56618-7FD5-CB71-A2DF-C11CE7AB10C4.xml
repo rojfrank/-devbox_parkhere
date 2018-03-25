@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01C56618-7FD5-CB71-A2DF-C11CE7AB10C4" name="Departamentos">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-24 23:56:49 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Departamento" id="DC8A10BC-183C-E909-704E-73E914E07962">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:01:00 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Departamento" id="8652D846-75E5-EA73-3D8B-0A161299C51C">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:01:00 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Pais" id="2081BCF7-3AC2-53D6-0703-838D8931E750">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:07:28 UTC</createdTime>
+<generatorID>D7802B26-2DA7-BA3E-0F28-6CEFD32FE5BB</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>F35C41C7-AF42-3D24-C85C-D45B140A708E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CB91945-7B68-1807-FBEA-1147DC8996C2" name="Departamentos PK">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 00:01:19 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC8A10BC-183C-E909-704E-73E914E07962</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
