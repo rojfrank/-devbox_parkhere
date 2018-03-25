@@ -15,6 +15,7 @@
 <Attribute name="Co_UbicacionEstacionamiento" id="B2E9E0B1-F048-1E08-18FD-0E433D4C8BF3">
 <createdBy>DesarrolloTSI</createdBy>
 <createdTime>2018-03-25 00:30:31 UTC</createdTime>
+<comment>primer piso, sótano, etc.</comment>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

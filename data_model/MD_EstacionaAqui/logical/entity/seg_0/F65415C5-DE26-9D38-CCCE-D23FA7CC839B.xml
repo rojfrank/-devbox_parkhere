@@ -1,11 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F65415C5-DE26-9D38-CCCE-D23FA7CC839B" name="Alquiler">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F65415C5-DE26-9D38-CCCE-D23FA7CC839B" name="Alquileres">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:17:14 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,21 +16,25 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:17:24 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fe_Fecha" id="5908896C-E0C7-CCD7-B5C4-7CE04B9A8FA5">
+<Attribute name="Fe_FechaInicio" id="5908896C-E0C7-CCD7-B5C4-7CE04B9A8FA5">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:17:38 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_FechaFin" id="6C404BEF-A4E7-1E2C-B371-93EDE2F65684">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:24:26 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,44 +45,33 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:18:26 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT014</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_Puntuacion" id="B675DC9E-BBFC-FC52-9459-95CD1B866547">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:27:42 UTC</createdTime>
-<comment>1 al 5</comment>
+<Attribute name="Co_Usuario" id="D05FE086-C87E-8410-636C-2E217E249B86">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:34:40 UTC</createdTime>
+<generatorID>0348CA82-1012-DE43-E0EB-FAFF1C40E229</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ACFB40FE-F276-D442-165C-F3153BB652DE</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_ComentarioPuntuacion" id="C2FE4574-AC84-E289-FF01-31CBE27B9CA9">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:28:08 UTC</createdTime>
-<comment>Opcional</comment>
+<Attribute name="Co_Estacionamiento" id="FA87713C-16D1-7708-8985-66CADCB0D3AE">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:34:59 UTC</createdTime>
+<generatorID>7E168D19-95F8-A5D3-8FCA-18C52EC98035</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -89,9 +79,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:21:37 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>29116EE6-4DA2-B6F5-1D37-76D028B77838</attributeRef>

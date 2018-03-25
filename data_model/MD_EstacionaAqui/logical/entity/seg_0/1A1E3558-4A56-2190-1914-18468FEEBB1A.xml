@@ -131,17 +131,6 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_Distrito" id="705CE997-1FD4-9EC7-E6D4-64E5D2F8FCB7">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:14:38 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Co_Identidad" id="21D55D7B-6F10-C6A5-07DE-B661ECC26370">
 <createdBy>DesarrolloTSI</createdBy>
 <createdTime>2018-03-24 23:50:48 UTC</createdTime>
@@ -159,6 +148,17 @@
 <generatorID>2F26C1AF-7294-2183-1C1F-75E8FCB59FE4</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <referedAttribute>19F241DA-E20E-3183-89A7-91690C432C11</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Distrito" id="0B27B907-3012-668F-A222-F06AADD7B5E8">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:18:30 UTC</createdTime>
+<generatorID>33D31023-041D-28E0-1A25-5725B6E4876F</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>FF6BA2B8-A7C9-7405-B180-7F6296E4741F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

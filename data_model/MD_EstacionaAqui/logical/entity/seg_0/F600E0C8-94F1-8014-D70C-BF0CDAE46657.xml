@@ -3,9 +3,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:29:21 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:29:39 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:29:53 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,9 +36,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:30:37 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,9 +46,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:30:54 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,9 +56,6 @@
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:31:05 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,9 +67,6 @@
 <createdTime>2018-03-23 23:31:24 UTC</createdTime>
 <comment>1: página principal, 2: páginas del cliente, 3: páginas del dueño</comment>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -95,15 +74,23 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Co_Distrito" id="E801A8C2-3652-01C0-F0B7-20A7C0E9B325">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:43:20 UTC</createdTime>
+<generatorID>C21AC5C0-2B5A-DABD-3826-3243439F5D01</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>FF6BA2B8-A7C9-7405-B180-7F6296E4741F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E853D854-05D1-B4CE-023F-172B703E760B" name="Publicidad PK">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:29:52 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<engineerTo>
-<item key="FCB548B7-853B-F0B2-00E6-02786E3F02F4" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>01B79D3E-25DC-E630-2F32-AFF83FC9B21E</attributeRef>

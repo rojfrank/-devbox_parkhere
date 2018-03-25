@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B75F3849-EF68-0D38-0A04-FFB0C40B96BD" name="Estacionamientos_Comentario">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:50:58 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="No_Comentario" id="4D88A103-3CCF-0945-6BB5-4B76368B775C">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:51:22 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Comentario" id="7D194ABB-9494-3E1F-8B7C-1057E127A22B">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:51:22 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Usuario" id="51B331D1-60D7-1045-0E90-6E8278BD079B">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:54:22 UTC</createdTime>
+<generatorID>A2E1540C-EB68-8CE2-46BA-2746B43AB353</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>ACFB40FE-F276-D442-165C-F3153BB652DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Estacionamiento" id="2AB8435B-4F84-22DA-67D0-C528C5E0891E">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:54:45 UTC</createdTime>
+<generatorID>0D1D21E9-AC79-37FD-D28D-33474CAE0233</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Comentario1" id="B9D85B43-3E9C-F34D-1AB5-D8FBD905EB72">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:55:13 UTC</createdTime>
+<generatorID>E7D74FA6-907D-12DC-5DC0-7A166E169ED9</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7D194ABB-9494-3E1F-8B7C-1057E127A22B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94D5CB52-2073-F06C-54E7-F0E19F17104E" name="Estacionamientos_Comentario PK">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:53:49 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D194ABB-9494-3E1F-8B7C-1057E127A22B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

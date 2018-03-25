@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1CF282D-A981-7E3A-736C-E5CA3439C3A2" name="Estacionamiento">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1CF282D-A981-7E3A-736C-E5CA3439C3A2" name="Estacionamientos">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 22:56:47 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
@@ -107,6 +107,16 @@
 <Attribute name="Nu_DimensionAncho" id="8B789B44-B748-9591-1BEF-6C119C85F6B3">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:02:53 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_DimensionAlto" id="EB229754-D935-4864-463C-1EFE3B06C94B">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:14:41 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>

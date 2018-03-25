@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FDCE6BC-B2CF-2403-FC43-FA671E70C9E0" name="Alquileres_Servicio">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:26:42 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Co_Servicio" id="D2D51FA2-5C39-45D1-0F98-EA61C2F9ECFC">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:27:49 UTC</createdTime>
+<generatorID>D4FBE783-33ED-38CF-9160-ADB8F4843C64</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>F4623A8B-3F6F-241B-B4E6-5B79182DB10B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Alquiler" id="37FCD683-931E-3AB8-1676-456D28EFC56E">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-03-25 02:27:59 UTC</createdTime>
+<generatorID>1B052938-8031-91BC-6F87-A63C65C5AF3D</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>29116EE6-4DA2-B6F5-1D37-76D028B77838</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
