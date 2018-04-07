@@ -15,4 +15,8 @@ class PagesController < ApplicationController
   def publish
   	
   end
+  
+  def register_user
+  end
+
 end
