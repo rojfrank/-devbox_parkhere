@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   # get 'parks/register'
   get 'parks/register', controller: :parks, action: :register, alias: 'register'
 
+  get 'pages/login_propietary' 
+
+  get 'pages/login_user' 
+
+  get 'pages/register_propietary'  
+
   root 'pages#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
