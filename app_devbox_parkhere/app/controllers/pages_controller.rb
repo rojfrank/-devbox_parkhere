@@ -11,4 +11,8 @@ class PagesController < ApplicationController
 
   def register_propietary
   end
+
+  def publish
+  	
+  end
 end

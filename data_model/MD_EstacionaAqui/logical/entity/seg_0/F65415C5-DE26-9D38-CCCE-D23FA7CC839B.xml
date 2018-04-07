@@ -73,6 +73,16 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Nu_Precio" id="D6BECCBA-EA25-52F5-4616-D0ACCE54A07E">
+<createdBy>Developer</createdBy>
+<createdTime>2018-04-07 15:31:25 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5D2F1369-4B26-516B-779C-B15DC91F0D20" name="Alquiler PK">

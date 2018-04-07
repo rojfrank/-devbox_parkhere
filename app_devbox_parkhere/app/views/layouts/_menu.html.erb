@@ -12,10 +12,8 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><%= link_to 'Inicio', root_path %></li>
-				<li class="active"><%= link_to 'Servicios', root_path %></li>
-				<li class="active"><%= link_to 'Contacto', root_path %></li>
-				<li><%= link_to 'Buscar estacionamientos', parks_find_path %></li>		
-				<li><%= link_to 'Registrar como propietario', parks_find_path %></li>	
+				<li><%= link_to 'Buscar estacionamientos', parks_find_path %></li>
+				<li><%= link_to "Registrese propietario", controller:"pages", action: "register_propietary"  %></li>
 			</ul>			
 		</div>
 	</div>
