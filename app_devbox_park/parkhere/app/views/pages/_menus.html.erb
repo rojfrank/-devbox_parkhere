@@ -1,0 +1,24 @@
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+
+
+   <li><%= link_to "Home", controller: "home", action: "index" %></li>
+   
+<li><%= link_to "Iniciar sesion de propietario", controller:"pages", action: "login_propietary" %> </li>
+
+<li><%= link_to "Iniciar sesion de usuario", controller:"pages", action: "login_user"  %> </li>
+
+<li><%= link_to "Registro de propietario", controller:"pages", action: "register_propietary"  %> </li>
+
+<li><%= link_to "Registro de usuario", controller:"pages", action:  "register_user" %> </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
