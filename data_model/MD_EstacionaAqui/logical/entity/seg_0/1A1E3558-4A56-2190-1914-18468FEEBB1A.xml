@@ -164,6 +164,17 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Fl_situacion" id="0BB816E6-41DB-02F7-28A2-E883A476147A">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-07 16:09:27 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EE79DAB9-4D84-3380-548B-0FBC8C94DD35" name="Dueno_est PK">

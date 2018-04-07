@@ -201,6 +201,17 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Fl_Situacion" id="696C5361-7957-78F1-E8B7-88AFDF652CD3">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-07 16:05:26 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7690BB5C-CCAD-A9EC-D4A5-C588513F61C5" name="Estacionamiento PK">
