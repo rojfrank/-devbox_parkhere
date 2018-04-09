@@ -18,7 +18,7 @@
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="No_Descriptivo" id="09097861-FAB2-9C61-9FF7-91B166BA8275">
@@ -124,17 +124,6 @@
 <logicalDatatype>LOGDT026</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fl_Tipo" id="25A2B1D4-9F84-E452-DA34-09C588E87179">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:03:17 UTC</createdTime>
-<comment>interior, exterior, aire libre</comment>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="No_Ubicacion" id="43327087-45BF-EEA1-0887-C5662C67CF89">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:03:57 UTC</createdTime>
@@ -211,6 +200,27 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tx_Otros" id="57D9828E-B176-3141-222A-FD6EFC570ECC">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 00:12:39 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fe_InicioReserva" id="4DC35F27-3FB6-541B-8BB9-4AB8AADA2A43">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 01:32:47 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

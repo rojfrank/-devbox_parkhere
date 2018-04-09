@@ -20,7 +20,7 @@
 <referedAttribute>CEB97AA8-12F3-BB1F-3807-C06B2D3E9FD9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Co_Servicio" id="5EF4CDF2-E0DA-4A35-C492-B60A81E60D8B">

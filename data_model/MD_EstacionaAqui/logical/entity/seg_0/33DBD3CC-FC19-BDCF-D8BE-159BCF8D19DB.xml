@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01C56618-7FD5-CB71-A2DF-C11CE7AB10C4" name="Departamentos">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33DBD3CC-FC19-BDCF-D8BE-159BCF8D19DB" name="Caracteristicas_estacionamiento">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-24 23:56:49 UTC</createdTime>
+<createdTime>2018-04-09 01:24:44 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,35 +12,35 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Co_Departamento" id="DC8A10BC-183C-E909-704E-73E914E07962">
+<Attribute name="Co_Caracteristica" id="B45C9F6B-517D-BB5E-529A-A83DB8B616D4">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:01:00 UTC</createdTime>
+<createdTime>2018-04-09 01:25:10 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_Departamento" id="8652D846-75E5-EA73-3D8B-0A161299C51C">
+<Attribute name="No_Caracteristica" id="D70A0DE4-13E1-F44E-A071-564422A0B1E5">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:01:00 UTC</createdTime>
+<createdTime>2018-04-09 01:25:23 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="9CB91945-7B68-1807-FBEA-1147DC8996C2" name="Departamentos PK">
+<identifier id="B791929E-3FE4-6B07-D91D-C05CF3A142FA" name="Caracteristicas_estacionamiento PK">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:01:19 UTC</createdTime>
+<createdTime>2018-04-09 01:25:55 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>DC8A10BC-183C-E909-704E-73E914E07962</attributeRef>
+<attributeRef>B45C9F6B-517D-BB5E-529A-A83DB8B616D4</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

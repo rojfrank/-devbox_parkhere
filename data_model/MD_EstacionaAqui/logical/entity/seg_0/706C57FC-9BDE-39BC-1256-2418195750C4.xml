@@ -32,27 +32,6 @@
 <dataTypeSize>60</dataTypeSize>
 <ownDataTypeParameters>60,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="No_Descripcion" id="0ABE6934-9D5F-CCB3-1535-A46BFFF5BA08">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:25:03 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Nu_Tarifa" id="75F30466-ED6C-A50B-EB4A-E8B7F6F34212">
-<createdBy>rcastillo</createdBy>
-<createdTime>2018-03-23 23:25:26 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT026</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="10EB160D-11DA-3C19-F0B5-D9C012A3D11C" name="Servicios PK">

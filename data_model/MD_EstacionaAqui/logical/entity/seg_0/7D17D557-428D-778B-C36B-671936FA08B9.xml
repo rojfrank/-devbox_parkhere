@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90C47F3-54E4-6D0D-8AB8-5EB7DAC6DD8D" name="Estacionamientos_Imagen">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D17D557-428D-778B-C36B-671936FA08B9" name="Estacionamientos_Espacio">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:24:05 UTC</createdTime>
+<createdTime>2018-04-09 02:02:48 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,29 +12,31 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="co_imagen" id="99ACA9DC-5EAA-248A-E12D-3E0BC48A6EB0">
+<Attribute name="Nu_AlturaMaxima" id="4B7E0580-13D6-21C4-4949-9906DEDAB3D2">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:24:40 UTC</createdTime>
+<createdTime>2018-04-09 02:02:52 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="im_imagen" id="D992EE5B-1103-DFB8-A77A-DD775AC587AD">
+<Attribute name="Co_TipoVehiculo" id="304BEC4C-1D89-9A20-4E4F-30243F1B0D23">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:25:27 UTC</createdTime>
+<createdTime>2018-04-09 02:03:10 UTC</createdTime>
+<generatorID>4DCCA80A-881C-EAC9-37FF-D6FDAA563948</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>25EC858C-8878-649B-598F-8A324626E245</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT010</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Co_Estacionamiento" id="81E2CAB9-6936-D02E-7AA2-F53B6776DD52">
+<Attribute name="Co_Estacionamiento" id="BBBB68DD-C0F7-3BB2-2CDA-54BF76416EE4">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:33:09 UTC</createdTime>
-<generatorID>E1A7E647-2A08-3775-83DA-CD1917F47809</generatorID>
+<createdTime>2018-04-09 02:03:20 UTC</createdTime>
+<generatorID>71ED79D5-BE47-4727-5359-5A52B72D53B5</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,15 +44,26 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Fl_estado" id="DDF5CA2F-59BE-BDF6-E2B4-DFA84AA29F1C">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 02:08:37 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C1A98189-7069-EF43-CC20-EA988D853834" name="Estacionamientos_Imagen PK">
+<identifier id="85DC8381-B4F0-5A0D-3356-C8C624AA642B" name="Estacionamientos_Espacio PK">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:25:03 UTC</createdTime>
+<createdTime>2018-04-09 02:03:10 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>99ACA9DC-5EAA-248A-E12D-3E0BC48A6EB0</attributeRef>
+<attributeRef>304BEC4C-1D89-9A20-4E4F-30243F1B0D23</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

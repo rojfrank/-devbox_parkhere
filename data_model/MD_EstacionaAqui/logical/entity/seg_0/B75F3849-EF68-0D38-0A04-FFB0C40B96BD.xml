@@ -12,7 +12,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="No_Comentario" id="4D88A103-3CCF-0945-6BB5-4B76368B775C">
+<Attribute name="Tx_Comentario" id="4D88A103-3CCF-0945-6BB5-4B76368B775C">
 <createdBy>DesarrolloTSI</createdBy>
 <createdTime>2018-03-25 02:51:22 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
@@ -51,7 +51,7 @@
 <referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Co_Comentario1" id="B9D85B43-3E9C-F34D-1AB5-D8FBD905EB72">
@@ -61,6 +61,16 @@
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>7D194ABB-9494-3E1F-8B7C-1057E127A22B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_Puntaje" id="BCDD0EB4-98BB-357E-AC21-F7D9E8913E41">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-08 23:53:06 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

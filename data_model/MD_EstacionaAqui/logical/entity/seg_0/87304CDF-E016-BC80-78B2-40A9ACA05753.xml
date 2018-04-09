@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90C47F3-54E4-6D0D-8AB8-5EB7DAC6DD8D" name="Estacionamientos_Imagen">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="87304CDF-E016-BC80-78B2-40A9ACA05753" name="Estacionamiento_Disponibilidad">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:24:05 UTC</createdTime>
+<createdTime>2018-04-09 02:06:40 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,29 +12,40 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="co_imagen" id="99ACA9DC-5EAA-248A-E12D-3E0BC48A6EB0">
+<Attribute name="Nu_Dia" id="AE3C61BC-801D-E2C5-7610-BF88C2FD5242">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:24:40 UTC</createdTime>
+<createdTime>2018-04-09 02:08:56 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="im_imagen" id="D992EE5B-1103-DFB8-A77A-DD775AC587AD">
+<Attribute name="Fe_Inicio" id="B9A9DB11-4A10-A9FA-7E1C-577D3CF8A856">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:25:27 UTC</createdTime>
+<createdTime>2018-04-09 02:09:03 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT010</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Co_Estacionamiento" id="81E2CAB9-6936-D02E-7AA2-F53B6776DD52">
+<Attribute name="Fe_Fin" id="779F39ED-BB08-6B1E-D3FD-7ED85373F81F">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:33:09 UTC</createdTime>
-<generatorID>E1A7E647-2A08-3775-83DA-CD1917F47809</generatorID>
+<createdTime>2018-04-09 02:09:03 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Estacionamiento" id="D6559383-1792-4F5F-320E-6CC758CF47BE">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 02:12:13 UTC</createdTime>
+<generatorID>F0602F6C-4D7D-047B-B58C-ADD98EFD5D38</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,13 +55,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C1A98189-7069-EF43-CC20-EA988D853834" name="Estacionamientos_Imagen PK">
+<identifier id="C7E83E36-6BAE-90C8-7424-AB76749DCD02" name="Estacionamiento_Disponibilidad PK">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 00:25:03 UTC</createdTime>
+<createdTime>2018-04-09 02:12:13 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>99ACA9DC-5EAA-248A-E12D-3E0BC48A6EB0</attributeRef>
+<attributeRef>D6559383-1792-4F5F-320E-6CC758CF47BE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

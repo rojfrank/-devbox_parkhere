@@ -41,14 +41,14 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Fe_Hora" id="4E1EA73F-63C4-6AAA-665B-C693BD227A57">
+<Attribute name="Nu_Hora" id="4E1EA73F-63C4-6AAA-665B-C693BD227A57">
 <createdBy>rcastillo</createdBy>
 <createdTime>2018-03-23 23:18:26 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Co_Usuario" id="D05FE086-C87E-8410-636C-2E217E249B86">
@@ -70,7 +70,7 @@
 <referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nu_Precio" id="D6BECCBA-EA25-52F5-4616-D0ACCE54A07E">
