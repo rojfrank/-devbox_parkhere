@@ -59,7 +59,6 @@
 <createdTime>2018-03-25 02:55:13 UTC</createdTime>
 <generatorID>E7D74FA6-907D-12DC-5DC0-7A166E169ED9</generatorID>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>7D194ABB-9494-3E1F-8B7C-1057E127A22B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -85,6 +84,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>7D194ABB-9494-3E1F-8B7C-1057E127A22B</attributeRef>
+<attributeRef>B9D85B43-3E9C-F34D-1AB5-D8FBD905EB72</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
