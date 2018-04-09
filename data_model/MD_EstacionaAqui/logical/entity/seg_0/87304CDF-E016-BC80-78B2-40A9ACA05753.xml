@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D230AAF1-A804-47FF-4BAA-C7C150235D58" name="Alquileres_Servicios">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="87304CDF-E016-BC80-78B2-40A9ACA05753" name="Estacionamiento_Disponibilidad">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:35:31 UTC</createdTime>
+<createdTime>2018-04-09 02:06:40 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,34 +12,42 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Co_Estacionamiento" id="7E736F96-E458-920E-3FA0-FB6DBB7D6C79">
+<Attribute name="Nu_Dia" id="AE3C61BC-801D-E2C5-7610-BF88C2FD5242">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:36:00 UTC</createdTime>
-<generatorID>E95A08C3-52F7-7B77-51C1-88A72307A827</generatorID>
+<createdTime>2018-04-09 02:08:56 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<referedAttribute>CEB97AA8-12F3-BB1F-3807-C06B2D3E9FD9</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Co_Servicio" id="5EF4CDF2-E0DA-4A35-C492-B60A81E60D8B">
+<Attribute name="Fe_Inicio" id="B9A9DB11-4A10-A9FA-7E1C-577D3CF8A856">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:36:00 UTC</createdTime>
-<generatorID>E95A08C3-52F7-7B77-51C1-88A72307A827</generatorID>
+<createdTime>2018-04-09 02:09:03 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<referedAttribute>C52DB3A9-262C-D80C-7432-7EC614647532</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Co_Alquiler" id="913CD8F9-B8DC-6FAC-7425-3F4F7A8C5AA3">
+<Attribute name="Fe_Fin" id="779F39ED-BB08-6B1E-D3FD-7ED85373F81F">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:36:05 UTC</createdTime>
-<generatorID>8708F56F-2E42-6E82-58D5-4DD168BB13F6</generatorID>
+<createdTime>2018-04-09 02:09:03 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<referedAttribute>29116EE6-4DA2-B6F5-1D37-76D028B77838</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Co_Estacionamiento" id="D6559383-1792-4F5F-320E-6CC758CF47BE">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 02:12:13 UTC</createdTime>
+<generatorID>F0602F6C-4D7D-047B-B58C-ADD98EFD5D38</generatorID>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -47,15 +55,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1C97973D-EB78-2C39-C957-279EAC536DF9" name="Alquileres_Servicios PK">
+<identifier id="C7E83E36-6BAE-90C8-7424-AB76749DCD02" name="Estacionamiento_Disponibilidad PK">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:36:00 UTC</createdTime>
+<createdTime>2018-04-09 02:12:13 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>7E736F96-E458-920E-3FA0-FB6DBB7D6C79</attributeRef>
-<attributeRef>5EF4CDF2-E0DA-4A35-C492-B60A81E60D8B</attributeRef>
-<attributeRef>913CD8F9-B8DC-6FAC-7425-3F4F7A8C5AA3</attributeRef>
+<attributeRef>D6559383-1792-4F5F-320E-6CC758CF47BE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

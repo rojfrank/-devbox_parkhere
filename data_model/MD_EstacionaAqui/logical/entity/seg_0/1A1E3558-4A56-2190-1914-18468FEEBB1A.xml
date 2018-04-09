@@ -171,7 +171,7 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT006</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
@@ -184,6 +184,24 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>ACFB40FE-F276-D442-165C-F3153BB652DE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BA5C0E2D-C927-822E-CBA8-901825B8CF16" name="Correo_Unico">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-08 23:54:05 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<newElementsIDs>4B4FC14A-991C-0AE5-58AC-66457DC55E69</newElementsIDs>
+<usedAttributes>
+<attributeRef>4B4FC14A-991C-0AE5-58AC-66457DC55E69</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A13EA6CA-0BC0-DEDF-1103-C22BC42D083F" name="Numero_unico">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 00:19:55 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<newElementsIDs>59F6C56F-EC17-0EC6-0BA9-FED862178F29</newElementsIDs>
+<usedAttributes>
+<attributeRef>59F6C56F-EC17-0EC6-0BA9-FED862178F29</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

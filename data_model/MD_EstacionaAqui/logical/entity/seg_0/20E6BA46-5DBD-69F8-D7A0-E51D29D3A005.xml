@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3036E129-A3FD-3947-78E1-6833037B5ABA" name="Estacionamientos_Servicios">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20E6BA46-5DBD-69F8-D7A0-E51D29D3A005" name="TipoVehiculo">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:32:12 UTC</createdTime>
+<createdTime>2018-04-09 01:53:09 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,70 +12,65 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Co_Estacionamiento" id="CEB97AA8-12F3-BB1F-3807-C06B2D3E9FD9">
+<Attribute name="Co_TipoVehiculo" id="25EC858C-8878-649B-598F-8A324626E245">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:32:27 UTC</createdTime>
-<generatorID>27A6A19D-AE90-FD2D-435A-BAFC83F246A8</generatorID>
+<createdTime>2018-04-09 01:53:37 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<referedAttribute>F5944A6E-DACA-A6F7-94EB-3F1EFB9651F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Co_Servicio" id="C52DB3A9-262C-D80C-7432-7EC614647532">
+<Attribute name="No_TipoVehiculo" id="EA907E36-8E9A-A183-1556-FEB9ABBDA1B1">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:32:31 UTC</createdTime>
-<generatorID>98CA91C2-E1DF-16E0-05F8-0E1AFA87011D</generatorID>
+<createdTime>2018-04-09 01:53:37 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<referedAttribute>F4623A8B-3F6F-241B-B4E6-5B79182DB10B</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nu_DimensionLargo" id="D6F3EF8B-1553-EF4F-BD03-CAB63942CAE1">
+<createdBy>DesarrolloTSI</createdBy>
+<createdTime>2018-04-09 01:54:12 UTC</createdTime>
+<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Nu_Precio" id="06A0E430-DD9C-473F-EF2B-C6FCA29ED8C1">
+<Attribute name="Nu_DimensionAncho" id="E5B6F399-8B75-C330-9D6B-9C45749B38EC">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-04-08 21:52:22 UTC</createdTime>
+<createdTime>2018-04-09 01:54:21 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Tx_Descripcion" id="287FA2A6-30DC-E527-4FB4-0AE952F41322">
+<Attribute name="Nu_DimensionAlto" id="96899F0E-042B-A958-BEAF-7E1E0283F6DF">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-04-09 00:16:41 UTC</createdTime>
+<createdTime>2018-04-09 01:54:21 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>60</dataTypeSize>
-<ownDataTypeParameters>60,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Tx_TituloOpcional" id="7E229A29-A9E9-22AA-E6EC-0504D5879B18">
-<createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-04-09 00:17:06 UTC</createdTime>
-<ownerDesignName>MD_EstacionaAqui</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>60</dataTypeSize>
-<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D529EF7-E0B5-3E18-70E1-840B39487534" name="Estacionamientos_Servicios PK">
+<identifier id="AA0151B4-3679-0D12-E101-24D4A402F629" name="TipoVehiculo PK">
 <createdBy>DesarrolloTSI</createdBy>
-<createdTime>2018-03-25 02:32:27 UTC</createdTime>
+<createdTime>2018-04-09 01:58:52 UTC</createdTime>
 <ownerDesignName>MD_EstacionaAqui</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>CEB97AA8-12F3-BB1F-3807-C06B2D3E9FD9</attributeRef>
-<attributeRef>C52DB3A9-262C-D80C-7432-7EC614647532</attributeRef>
+<attributeRef>25EC858C-8878-649B-598F-8A324626E245</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
