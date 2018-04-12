@@ -2,8 +2,6 @@
 <title>Registro de estacionamiento</title>
 <% end %>
 
-
-
 <div class="container">
   <h1 class="text-center">Registro de estacionamiento</h1>
 <form class="form-horizontal">
@@ -18,9 +16,9 @@
         </div>
        
         <div class="form-group">
-          <label class="control-label col-sm-3" for="adress">Dirección</label>
+          <label class="control-label col-sm-3" for="address">Dirección</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control" id="adress" placeholder="Ingrese dirección">
+            <input type="text" class="form-control" id="address" placeholder="Ingrese dirección">
           </div>
         </div>
 
@@ -56,35 +54,7 @@
           <div class="col-sm-6">
             <input type="tel" class="form-control" id="phone" placeholder="Ingrese teléfono">
           </div>
-
           <label class="control-label" for="phone">(Opcional)</label>
-
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-3" for="email">Correo</label>
-          <div class="col-sm-6">
-            <input type="email" class="form-control" id="email" placeholder="Ingrese correo">
-          </div>
-        </div>
-
-
-
-        <div class="form-group">
-          <label class="control-label col-sm-3">Precio por hora</label>
-            <div class="col-sm-3">
-                <select type="text" placeholder="Moneda" class="form-control">
-                   <option>Moneda</option>
-                  <option value="female">Soles</option>
-                  <option value="male">Dolares</option>
-                </select>
-            </div>
-
-            <div class="col-sm-3">
-               <input type="text" class="form-control" id="adress" placeholder="Ingrese precio">
-            </div>
-            <label class="control-label" for="phone">Ubicación según el tipo</label>
-
         </div>
      </div>
 
@@ -94,43 +64,94 @@
 
         <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-5">
-                  <a href="register_user">
+                  <a href="pictures">
                      <button type="submit" class="btn btn-success btn-block">Fotos
                      </button>
                   </a>
               </div>
         </div>
 
-             <div class="form-group">        
+        <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-5">
-                  <a href="register_user">
+                  <a href="services">
                      <button type="submit" class="btn btn-success btn-block">Servicios
                      </button>
                   </a>
               </div>
         </div>
 
-          <div class="form-group">        
+        <div class="form-group">        
               <div class="panel panel-default col-sm-offset-2 col-sm-5">
                 <h6>Servicio de limpieza</h6>
                 <h6>Servicio de lavado</h6>                 
-                  </a>
               </div>
         </div>
 
-
-
-
-
-
-
-
-<!--       <h3 style="font-style: oblique;font-weight: bold;"><u>Detalles Estacionamiento</u></h3><br>
-   
-       </div>
-
-   -->
      </div>
+  </div>
+  <div class="row">
+  
+          <label class="control-label col-sm-2">Precio por hora</label>
+            <div class="col-sm-2">
+                <select type="text" placeholder="Moneda" class="form-control">
+                   <option>Moneda</option>
+                  <option value="sol">Soles</option>
+                  <option value="dolar">Dolares</option>
+                </select>
+            </div>
+      
+
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="price" placeholder="0.00">
+            </div>
+
+               <label class="control-label col-sm-2" for="phone">Ubicación según el tipo</label>
+            <div class="col-sm-2">
+                 <select type="text" placeholder="Tipo" class="form-control">
+                   <option>Tipo</option>
+                   <option value="interior">Interior</option>
+                   <option value="mexterior">Exterior</option>
+                   <option value="aire">Aire</option>
+                 </select>
+            </div>
    </div>
+   <div class="row">
+    <div style="margin-top:20px" > </div>
+
+     <div class="panel panel-default col-sm-offset-1 col-sm-2">Dimensiones
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="width">Ancho</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="width" placeholder="0.00">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="height">Alto</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="height" placeholder="0.00">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-4" for="length">Largo</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="length" placeholder="0.00">
+          </div>
+        </div>
+     </div>
+
+      <div class="form-group">
+          <label class="control-label col-sm-3" for="name">Ubicación Google Maps</label>
+          <div class="col-sm-3">
+             <input type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar
+            </button>
+          </div>
+      </div>
+
+   </div> 
  </form>
 </div>

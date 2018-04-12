@@ -1,14 +1,7 @@
 class ParksController < ApplicationController
-  layout 'parks'
-  def find
+  def pictures
   end
 
-  def rent
-  end
-
-  def quality
-  end
-
-  def register
+  def services
   end
 end

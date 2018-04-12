@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'parks/pictures'
+
+  get 'parks/services'
+
   # get 'parks/find'
   get 'parks/find', controller: :parks, action: :find, alias: 'find'
 
