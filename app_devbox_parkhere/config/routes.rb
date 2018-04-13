@@ -26,7 +26,17 @@ Rails.application.routes.draw do
     
   get 'parks/find_map', controller: :parks, action: :find_map, alias: 'find_map'
 
+  get 'pages/register_serv_adici'
+
+  get 'pages/add_images_est'
+
+  get 'pages/bk_add_images_est'
+
+  get 'pages/califi_estacio'
+
   root 'pages#index'
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
