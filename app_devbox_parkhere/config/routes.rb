@@ -22,7 +22,9 @@ Rails.application.routes.draw do
 
   get 'pages/register_propietary'  
 
-  get 'pages/register_user'  
+  get 'pages/register_user' 
+    
+  get 'parks/find_map', controller: :parks, action: :find_map, alias: 'find_map'
 
   root 'pages#index'
 

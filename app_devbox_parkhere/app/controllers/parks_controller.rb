@@ -4,4 +4,11 @@ class ParksController < ApplicationController
 
   def services
   end
+    
+  def find
+  end
+    
+  def find_map
+  end
+      
 end
