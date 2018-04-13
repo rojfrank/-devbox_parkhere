@@ -33,6 +33,8 @@ Rails.application.routes.draw do
     
   get 'register/parks/images', controller: :parks, action: :register_images, alias: 'register_images'
 
+  get 'pages/index_register', controller: :pages, action: :index_register, alias: 'index_register'  
+
   root 'pages#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

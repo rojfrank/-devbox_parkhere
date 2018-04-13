@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   def index
   end
 
+  def index_register
+  end
+
   def login_propietary
   end
 
