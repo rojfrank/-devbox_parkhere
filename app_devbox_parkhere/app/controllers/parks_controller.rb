@@ -19,5 +19,13 @@ class ParksController < ApplicationController
     
   def register_images
   end   
+    
+  def rent_comentary
+      
+  end
+
+  def find_rents
+      
+  end
       
 end

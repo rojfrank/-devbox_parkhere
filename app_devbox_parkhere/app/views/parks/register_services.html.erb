@@ -41,7 +41,9 @@
 
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-3">
-                        <button type="btn_agregar" class="btn btn-info btn-block">Agregar</button>
+                        <%= button_tag :class => "btn btn-info btn-block"  do %>
+                        <% link_to "Agregar" , parks_register_path %>
+                        <% end %>
                     </div>
                     <div class="col-sm-offset-2 col-sm-3">
                         <button type="btn_Cancelar" class="btn btn-info btn-block">Cancelar</button>

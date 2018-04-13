@@ -52,7 +52,9 @@
 
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-3">
-                        <button type="btn_enviar" class="btn btn-info btn-block">Enviar</button>
+                        <%= button_tag :class => "btn btn-info btn-block"  do %>
+                        <% link_to "Enviar" , parks_find_path %>
+                        <% end %>
                     </div>
                     <div class="col-sm-offset-2 col-sm-3">
                         <button type="btn_Cancelar" class="btn btn-info btn-block">Cancelar</button>

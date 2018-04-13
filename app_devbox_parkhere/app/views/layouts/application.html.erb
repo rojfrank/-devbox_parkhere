@@ -7,6 +7,12 @@
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
 
+    <style>
+        body {
+            background-image: image_url('cityscape.jpg');
+        }
+    </style>
+
     <body>
         <%= render partial: 'layouts/menu' %>
         <%= yield %>
