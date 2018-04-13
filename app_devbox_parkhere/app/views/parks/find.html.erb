@@ -91,7 +91,7 @@
         <div class="row">
             <div class="col-md-3">
                 <%= button_tag :class => "btn button-default" do %>
-                     <% link_to "Mapa" , parks_find_map_path %>
+                <% link_to "Mapa" , parks_find_map_path %>
                 <% end %>
             </div>
         </div>
@@ -126,6 +126,7 @@
             </div>
         </div>
         <hr> 
+
         <div class="row">
             <div class="col-md-2">
                 <a href="#">
@@ -134,7 +135,7 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Estacionamiento como Miraflores</a>
+                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
                 </h4>
                 <h5>S/ 10.00</h5>
                 <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
@@ -149,7 +150,7 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Estacionamiento como Miraflores</a>
+                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
                 </h4>
                 <h5>S/ 10.00</h5>
                 <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
@@ -164,7 +165,7 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="#">Estacionamiento como Miraflores</a>
+                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
                 </h4>
                 <h5>S/ 10.00</h5>
                 <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
