@@ -2,8 +2,6 @@ Rails.application.routes.draw do
   
   get 'parks/pictures'
 
-  get 'parks/services'
-
   # get 'parks/find'
   get 'parks/find', controller: :parks, action: :find, alias: 'find'
 
@@ -25,6 +23,12 @@ Rails.application.routes.draw do
   get 'pages/register_user' 
     
   get 'parks/find_map', controller: :parks, action: :find_map, alias: 'find_map'
+    
+  get 'parks/services', controller: :parks, action: :services, alias: 'services'
+    
+  get 'parks/register/services', controller: :parks, action: :register_services, alias: 'register_services'
+    
+  get 'parks/register/images', controller: :parks, action: :register_images, alias: 'register_images'
 
   get 'pages/register_serv_adici'
 
