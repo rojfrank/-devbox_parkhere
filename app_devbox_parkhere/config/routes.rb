@@ -30,7 +30,9 @@ Rails.application.routes.draw do
     
   get 'parks/register/images', controller: :parks, action: :register_images, alias: 'register_images'
 
-  get 'pages/register_serv_adici'
+  get 'parks/services', controller: :parks, action: :services, alias: 'services'  
+
+  get 'pages/index_register', controller: :pages, action: :index_register, alias: 'index_register'  
 
   get 'pages/add_images_est'
 
