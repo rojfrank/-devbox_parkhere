@@ -71,7 +71,16 @@
                 <div class="form-group">        
                     <div class="col-sm-offset-2 col-sm-5">
                         <%= button_tag :class => "btn button-success btn-block"  do %>
-                        <% link_to "Imagenes" , parks_register_images_path %>
+                        <% link_to "Imagenes" , parks_find_path %>
+                        <% end %>
+                    </div>
+                </div>
+
+
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-5">
+                        <%= button_tag :class => "btn button-success btn-block"  do %>
+                        <% link_to "Imagenes" , register_parks_images_path %>
                         <% end %>
                     </div>
                 </div>
@@ -79,7 +88,7 @@
                 <div class="form-group">        
                     <div class="col-sm-offset-2 col-sm-5">
                         <%= button_tag :class => "btn button-success btn-block"  do %>
-                        <% link_to "Servicios" , parks_register_services_path %>
+                        <% link_to "Servicios" , register_parks_services_path %>
                         <% end %>
                     </div>
                 </div>
