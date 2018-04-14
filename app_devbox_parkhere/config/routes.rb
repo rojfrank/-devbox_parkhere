@@ -22,9 +22,9 @@ Rails.application.routes.draw do
 
   get 'login/user' , controller: :login, action: :user, alias: 'user' 
 
-  get 'register/propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
+  get 'pages/register_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
 
-  get 'register/user' , controller: :pages, action: :register_user, alias: 'register_user'     
+  get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
     
   get 'parks/services', controller: :parks, action: :services, alias: 'services'
     
@@ -33,6 +33,8 @@ Rails.application.routes.draw do
   get 'register/parks/images', controller: :parks, action: :register_images, alias: 'register_images'
 
   get 'pages/index_register', controller: :pages, action: :index_register, alias: 'index_register'  
+
+  get 'pages/index_login', controller: :pages, action: :index_login, alias: 'index_login'
 
   root 'pages#index'
 
