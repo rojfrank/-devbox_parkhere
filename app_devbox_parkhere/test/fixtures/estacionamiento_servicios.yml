@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nu_precio: 1.5
+  tx_descripcion: MyString
+  tx_tituloopcional: MyText
+
+two:
+  nu_precio: 1.5
+  tx_descripcion: MyString
+  tx_tituloopcional: MyText

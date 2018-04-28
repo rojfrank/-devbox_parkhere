@@ -10,13 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180428052022) do
+ActiveRecord::Schema.define(version: 20180428072025) do
+
+  create_table "alquiler_servicios", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "alquilers", force: :cascade do |t|
     t.datetime "fe_fechainicio"
     t.datetime "fe_fechafin"
     t.time "nu_hora"
     t.float "nu_precio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estacionamiento_servicios", force: :cascade do |t|
+    t.float "nu_precio"
+    t.string "tx_descripcion"
+    t.text "tx_tituloopcional"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,6 +46,12 @@ ActiveRecord::Schema.define(version: 20180428052022) do
     t.boolean "fl_situacion"
     t.text "tx_otros"
     t.datetime "fe_inicioreserva"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "servicios", force: :cascade do |t|
+    t.string "no_nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
