@@ -10,7 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180428041438) do
+ActiveRecord::Schema.define(version: 20180428052022) do
+
+  create_table "alquilers", force: :cascade do |t|
+    t.datetime "fe_fechainicio"
+    t.datetime "fe_fechafin"
+    t.time "nu_hora"
+    t.float "nu_precio"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estacionamientos", force: :cascade do |t|
+    t.string "no_descriptivo"
+    t.string "no_direccion"
+    t.float "nu_longitud"
+    t.float "nu_latitud"
+    t.string "no_telefonofijo"
+    t.float "nu_precioporhora"
+    t.binary "im_foto"
+    t.text "no_ubicacion"
+    t.boolean "fl_situacion"
+    t.text "tx_otros"
+    t.datetime "fe_inicioreserva"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipo_estacionamientos", force: :cascade do |t|
+    t.string "no_nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tipo_identidads", force: :cascade do |t|
     t.integer "co_identidad"
@@ -21,6 +52,12 @@ ActiveRecord::Schema.define(version: 20180428041438) do
 
   create_table "tipo_usuarios", force: :cascade do |t|
     t.integer "co_tipousuario"
+    t.string "no_nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ubicacion_estacionamientos", force: :cascade do |t|
     t.string "no_nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
