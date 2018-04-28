@@ -1,0 +1,2 @@
+class TipoIdentidad < ApplicationRecord
+end
