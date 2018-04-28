@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180427052437) do
 
   create_table "users", force: :cascade do |t|
@@ -24,6 +25,37 @@ ActiveRecord::Schema.define(version: 20180427052437) do
     t.string "No_Correo"
     t.string "Pw_Contrasenia"
     t.string "Co_TipoUsuario"
+=======
+ActiveRecord::Schema.define(version: 20180428041438) do
+
+  create_table "tipo_identidads", force: :cascade do |t|
+    t.integer "co_identidad"
+    t.string "no_nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tipo_usuarios", force: :cascade do |t|
+    t.integer "co_tipousuario"
+    t.string "no_nombre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.integer "co_usuario"
+    t.string "no_nombres"
+    t.string "no_apellidopaterno"
+    t.string "no_apellidomaterno"
+    t.boolean "fl_sexo"
+    t.string "no_documento"
+    t.string "no_correo"
+    t.string "pw_contrasenia"
+    t.date "fe_nacimiento"
+    t.string "no_celular"
+    t.string "no_direccion"
+    t.boolean "fl_situacion"
+>>>>>>> 30dae8f66d2b20c66a558f564cc14e106dd06873
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

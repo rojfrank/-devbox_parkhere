@@ -28,7 +28,7 @@
 <div class="container-fluid">
 
     <!-- filter sidebar -->
-    <div class="col-lg-2">
+    <div class="col-sm-2">
         <h4>Filtros</h4>
 
         <div class="panel panel-default">
@@ -77,22 +77,40 @@
                     <option value="150101">Lima</option>
                 </select>
             </div>
-        </div>       
-        <div class="form-group col-sm-8"></div>
-        <div class="form-group col-sm-8">
-            <button class="btn btn-primary">Aplicar filtro</button>
+        </div> 
+
+        <div class="form-group pull-right">
+            <div class="stars" >
+                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star"/>
+                <label class="star star-1" for="star-1"></label>
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
+            <button class="btn btn-primary btn-block">Aplicar filtro</button>
         </div>              
     </div>
 
     <!-- table container -->
 
-    <div class="col-lg-10">
+    <div class="col-sm-10">
         <hr class="invisible"> 
         <div class="row">
-            <div class="col-md-3">
-                <%= button_tag :class => "btn button-default" do %>
+            <div class="col-md-2">
+                  <a href=<%= parks_find_path %>>
+                    <button type="submit" class="btn btn-success btn-block">Lista</button>
+                </a>
+            <!--     <%= button_tag :class => "btn button-default" do %>
                      <% link_to "Lista" , parks_find_path %>
-                <% end %>
+                <% end %> -->
             </div>
         </div>
         <hr> 
