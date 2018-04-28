@@ -18,7 +18,9 @@ Rails.application.routes.draw do
 
     get 'parks/quality', controller: :parks, action: :quality, alias: 'quality'
 
-    get 'parks/register', controller: :parks, action: :register, alias: 'register'
+    get 'parks/register', controller: :parks, action: :register
+
+    post 'parks/register', controller: :parks, action: :register_park    
 
     get 'login/propietary' , controller: :login, action: :propietary, alias: 'propietary' 
 
