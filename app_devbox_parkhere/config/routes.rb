@@ -22,15 +22,11 @@ Rails.application.routes.draw do
 
     get 'login/user' , controller: :login, action: :user, alias: 'user' 
 
-    ##get 'pages/register1_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
+    get 'pages/register1_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
 
 
     resources "users"
     
-
-
-
-
 
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 
