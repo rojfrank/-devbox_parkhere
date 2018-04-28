@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     end
 
     def index
-        @users = User.all
+        @users_p = User.all
     end
 
     def edit
@@ -40,7 +40,6 @@ class UsersController < ApplicationController
     def user_params
         params.require(:user).permit(:No_Nombres, :No_ApellidoPaterno, :No_ApellidoMaterno, :Fe_Nacimiento, :No_Celular, :Fl_Sexo, :Co_Identidad, :No_Documento, :No_Correo, :Pw_Contrasenia, :Co_TipoUsuario)
     end
-
 
 
 end
