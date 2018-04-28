@@ -50,6 +50,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading" align="center"> 
                     <h4>S/ <%= @estaciona.nu_precioporhora %> por Hora</h4>
+                    <%= alq.hidden_field :nu_precio, :value => @estaciona.nu_precioporhora %> 
                 </div>
                 <div class="panel-body">
 
@@ -58,13 +59,10 @@
                         <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
                     </div>
                     <hr>
-                    <div align="center" >
-                      
+                    <div align="center" >                   
                         <%= alq.submit 'Reservar' , :class => "btn button-default"  %>
-                    
                     </div>
                     <hr>
-
 
                     <div class="well" style="max-height: 300px;overflow: auto;">
                         <ul class="list-group checked-list-box">

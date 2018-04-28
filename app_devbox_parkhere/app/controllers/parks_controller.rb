@@ -12,15 +12,12 @@ class ParksController < ApplicationController
  
   def rent
       @estaciona = Estacionamiento.find(params[:id])
+      #@estacionaServ = EstacionamientoServicios.where("estacionamiento_id = ?", params[:id])
       @alquiler = Alquiler.new
   end
     
   def rent_reserved
-      @alquiler = Alquiler.new
-      @alquiler.fe_fechainicio = params[:fe_fechainicio]
-      @alquiler.fe_fechafin = params[:fe_fechafin]
-      @alquiler.nu_hora = 1.0
-      @alquiler.nu_precio = params[:nu_precioporhora]
+      @alquiler = Alquiler.new(alquiler_params)
 
       if @alquiler.save
           redirect_to :action => :find
@@ -66,6 +63,12 @@ class ParksController < ApplicationController
 
   def find_rents
       
+  end
+    
+  private
+
+  def alquiler_params
+    params.require(:alquiler).permit(:fe_fechainicio,:fe_fechafin,:nu_hora,:nu_precio)
   end
     
 end
