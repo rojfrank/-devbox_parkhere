@@ -1,0 +1,1 @@
+rails generate model User No_Nombres:string No_ApellidoPaterno:string No_ApellidoMaterno:string Fe_Nacimiento:text No_Celular:string Fl_Sexo:string Co_Identidad:string No_Documento:string No_Correo:string Pw_Contrasenia:string Co_TipoUsuario:string

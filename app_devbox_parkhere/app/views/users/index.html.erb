@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Nombres</th>
+    <th>Apellido P.</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.No_Nombres %></td>
+    <td><%= user.No_ApellidoPaterno %></td>
+    <td><%= link_to 'Show', :action => :show, :id => user.id %></td>
+    <td><%= link_to 'Edit', :action => :edit, :id => user.id %></td>
+  </tr>
+<% end %>
+</table>

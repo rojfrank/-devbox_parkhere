@@ -1,0 +1,175 @@
+<% content_for :"head" do %>
+<title>Registro de propietario</title>
+<% end %>
+
+<div class="container">
+    <h2 class="text-center">Registro de propietario</h2>
+    <div class="col-sm-offset-2 col-sm-6">
+        <div class="panel-body">
+            <form class="form-horizontal">
+
+                <%= form_for :user, :url => { :action => :update, :id=>@user.id }, :method => :put do |f| %>
+
+                <% if @user.errors.any? %>
+                <div id="errorExplanation">
+                    <h2><%= pluralize(@user.errors.count, "error") %> prohibited
+                        this post from being saved:</h2>
+                    <ul>
+                        <% @user.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                        <% end %>
+                    </ul>
+                </div>
+                <% end %>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4">Nombres </label>
+                    <div class="col-sm-8">
+                        <%= f.text_field :No_Nombres, placeholder:"Ingrese nombres", class:"form-control" %>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Apellido Paterno</label>
+                    <div class="col-sm-8">          
+                        <%= f.text_field :No_ApellidoPaterno, placeholder:"Ingrese apellido Paterno", class:"form-control" %>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Apellido Materno</label>
+                    <div class="col-sm-8">          
+                        <%= f.text_field :No_ApellidoMaterno, placeholder:"Ingrese apellido Materno", class:"form-control" %>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Fecha de Nacimiento</label>
+                    <div class="col-sm-8">          
+                        <%= f.date_field :Fe_Nacimiento, placeholder:"Date of Birth", class:"form-control" %>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Celular</label>
+                    <div class="col-sm-8">          
+                        <%= f.text_field :No_celular, placeholder:"Ingrese Celular", class:"form-control" %>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4">Sexo</label>
+
+                    <div class="col-sm-6">
+                        <%= f.radio_button :Fl_Sexo, 'M' %> Masculino<br />
+
+                        <%= f.radio_button :Fl_Sexo, 'F' %> Femenino<br />
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4"> Tipo de Documento </label>
+                    <div class="col-sm-8">
+                        <!--   <select type="f.text" placeholder="Co_identidad2" class="form-control">
+<option>Tipo documento de identidad</option>
+<option value="dni">DNI</option>
+<option value="ruc">RUC</option>
+<option value="carnet">Carnet de extranjeria</option>
+</select>-->
+
+
+                        <%= f.select :Co_Identidad, options_for_select([["DNI", "dni"], ["RUC", "ruc"], ["Carnet de extranjeria", "car"]]), placeholder:"Tipo de documento",  class:"form-control" %>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Documento</label>
+                    <div class="col-sm-8">          
+                        <%= f.text_field :No_Documento, placeholder:"Ingrese Nro. Documento", class:"form-control" %>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="email">Correo</label>
+                    <div class="col-sm-8">          
+                        <%= f.text_field :No_Correo, placeholder:"Ingrese Correo", class:"form-control" %>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" >Contraseña</label>
+                    <div class="col-sm-8">          
+                        <%= f.password_field :Pw_Contrasenia, placeholder:"Ingrese contraseña", class:"form-control" %>
+                        <%= f.hidden_field :Co_TipoUsuario, value: 01 %>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">        
+                    <div class="col-sm-offset-1 col-sm-6">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Acepta los </label><a href="#"> términos y condiciones </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-offset-8 ">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> No soy robot</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group"> 
+                        <div style="margin-top:10px" > </div>       
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <a href="f.submit">
+                                <button type="submit" class="btn btn-success btn-block">Registrar</button>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <% end %>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+get "users/new_user"
+    
+    get "users/:id" => "users#show_user"
+    
+    post "users" => "users#create"
+    
+    get "users" => "users#index"
+    
+    get "users/:id/edit" => "users#edit_user"
+    
+    put "users/:id" => "users#update"
