@@ -4,35 +4,43 @@ Rails.application.routes.draw do
 
     get 'login/user'
 
-    get 'parks/find', controller: :parks, action: :find, alias: 'find'
+    get 'parks/find', controller: :parks, action: :find
 
-    get 'parks/find_map', controller: :parks, action: :find_map, alias: 'find_map'
+    get 'parks/find_map', controller: :parks, action: :find_map
 
-    get 'parks/find/rents', controller: :parks, action: :find_rents, alias: 'find_rents'
+    get 'parks/find/rents', controller: :parks, action: :find_rents
 
-    get 'parks/rent', controller: :parks, action: :rent, alias: 'rent'
+    get 'parks/rent/:id', controller: :parks, action: :rent
+    
+    post 'parks/rent/reserved/:id', controller: :parks, action: :rent_reserved
 
     get 'parks/rent/comentary', controller: :parks, action: :rent_comentary, alias: 'rent_comentary'
 
     get 'parks/quality', controller: :parks, action: :quality, alias: 'quality'
 
-    get 'parks/register', controller: :parks, action: :register, alias: 'register'
+    get 'parks/register', controller: :parks, action: :register
+
+    post 'parks/register', controller: :parks, action: :register_park    
 
     get 'login/propietary' , controller: :login, action: :propietary, alias: 'propietary' 
 
     get 'login/user' , controller: :login, action: :user, alias: 'user' 
 
-    get 'pages/register1_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
-
+    get 'pages/register_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
 
     resources "users"
     
+<<<<<<< HEAD
     
     
     
     
     
 
+=======
+    resources "parks"
+    
+>>>>>>> e5690c121e2d8c17d18be271e26ec997fa68426b
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 
     get 'parks/services', controller: :parks, action: :services, alias: 'services'

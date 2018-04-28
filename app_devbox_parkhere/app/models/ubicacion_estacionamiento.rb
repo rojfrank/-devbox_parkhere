@@ -1,0 +1,2 @@
+class UbicacionEstacionamiento < ApplicationRecord
+end

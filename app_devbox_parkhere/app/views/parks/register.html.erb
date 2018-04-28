@@ -37,22 +37,21 @@ $(document).ready(function(){
 
 <div style="margin-top:20px" > </div>
 <div class="container">
-
-    <form class="form-horizontal">
+    <%= form_for @estacionamiento , :url => { :action => :register_park } do |f| %>
         <div class="row">
             <div class="col-sm-8">
 
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="name">Titulo</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese Titulo">
+                         <%= f.text_field :no_descriptivo, placeholder:"Ingrese título", class:"form-control" %>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="address">Dirección</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="address" placeholder="Ingrese dirección">
+                        <%= f.text_field :no_direccion, placeholder:"Ingrese dirección", class:"form-control" %>
                     </div>
                 </div>
 
@@ -86,7 +85,7 @@ $(document).ready(function(){
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="phone">Teléfono fijo</label>
                     <div class="col-sm-6">
-                        <input type="tel" class="form-control" id="phone" placeholder="Ingrese teléfono">
+                        <%= f.text_field :no_telefonofijo, placeholder:"Ingrese teléfono", class:"form-control" %>
                     </div>
                     <label class="control-label" for="phone">(Opcional)</label>
                 </div>
@@ -96,9 +95,7 @@ $(document).ready(function(){
 
                 <div class="form-group">        
                     <div class="col-sm-offset-2 col-sm-5">
-                        <%= button_tag :class => "btn button-success btn-block"  do %>
-                        <% link_to "Registrar" , parks_find_path %>
-                        <% end %>
+                        <%= f.submit 'Registrar' , :class => "btn button-default", :datatoggle => "modal"  %>
                     </div>
                 </div>
 
@@ -201,7 +198,7 @@ $(document).ready(function(){
                 </div>
             </div> 
         </div> 
-    </form>
+    <% end %>
 </div>
 
 
@@ -343,9 +340,3 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-

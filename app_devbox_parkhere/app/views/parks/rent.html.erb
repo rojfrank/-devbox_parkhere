@@ -1,14 +1,15 @@
-<div class="container">
 
+<div class="container">
+    <%= form_for @alquiler , :url => { :action => :rent_reserved } do |alq| %>
     <div class="row">
-        <h2>Estacionamiento en Miraflores</h2>
+        <h2><%= @estaciona.no_descriptivo %></h2>
         <div class="col-lg-4">
-            <h4>Dirección: Av. Benavides 123 - Lima, Lima, Miraflores</h4>
+            <h4>Dirección: <%= @estaciona.no_direccion %></h4>
             <div class='col-sm-10'>
                 <div class="form-group">       
                     <h5>Fecha y hora desde</h5>
                     <div class='input-group date' id='datetimepicker1'>
-                        <input type='text' class="form-control" />
+                        <%= alq.text_field :fe_fechainicio , :class => "form-control" %>                   
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -26,7 +27,7 @@
                 <div class="form-group">       
                     <h5>Fecha y hora hasta</h5>
                     <div class='input-group date' id='datetimepicker2'>
-                        <input type='text' class="form-control" />
+                        <%= alq.text_field :fe_fechafin , :class => "form-control" %>
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -48,7 +49,8 @@
         <div class="col-lg-3">
             <div class="panel panel-default">
                 <div class="panel-heading" align="center"> 
-                    <h4>S/ 10.00 por Hora</h4>
+                    <h4>S/ <%= @estaciona.nu_precioporhora %> por Hora</h4>
+                    <%= alq.hidden_field :nu_precio, :value => @estaciona.nu_precioporhora %> 
                 </div>
                 <div class="panel-body">
 
@@ -57,13 +59,10 @@
                         <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
                     </div>
                     <hr>
-                    <div align="center" >
-                        <%= button_tag :class => "btn button-default"  do %>
-                        <% link_to "Reservar" , parks_rent_comentary_path %>
-                        <% end %>
+                    <div align="center" >                   
+                        <%= alq.submit 'Reservar' , :class => "btn button-default"  %>
                     </div>
                     <hr>
-
 
                     <div class="well" style="max-height: 300px;overflow: auto;">
                         <ul class="list-group checked-list-box">
@@ -77,6 +76,7 @@
             </div>
         </div>
     </div>
+    <% end %>
     <h2>Comentarios</h2>
     <div class="media">
 
@@ -144,6 +144,7 @@
         <button type="submit" class="btn btn-primary ">Enviar</button>
     </form>
 </div>
+
 
 
 <script type="text/javascript">

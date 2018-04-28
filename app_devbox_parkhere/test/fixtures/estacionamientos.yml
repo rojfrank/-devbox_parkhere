@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_descriptivo: MyString
+  no_direccion: MyString
+  nu_longitud: 1.5
+  nu_latitud: 1.5
+  no_telefonofijo: MyString
+  nu_precioporhora: 1.5
+  im_foto: 
+  no_ubicacion: MyText
+  fl_situacion: false
+  tx_otros: MyText
+  fe_inicioreserva: 2018-04-28 00:20:22
+
+two:
+  no_descriptivo: MyString
+  no_direccion: MyString
+  nu_longitud: 1.5
+  nu_latitud: 1.5
+  no_telefonofijo: MyString
+  nu_precioporhora: 1.5
+  im_foto: 
+  no_ubicacion: MyText
+  fl_situacion: false
+  tx_otros: MyText
+  fe_inicioreserva: 2018-04-28 00:20:22

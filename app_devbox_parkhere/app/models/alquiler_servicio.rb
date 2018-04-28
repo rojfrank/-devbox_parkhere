@@ -1,0 +1,2 @@
+class AlquilerServicio < ApplicationRecord
+end
