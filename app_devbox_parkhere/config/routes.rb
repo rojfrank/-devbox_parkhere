@@ -4,13 +4,15 @@ Rails.application.routes.draw do
 
     get 'login/user'
 
-    get 'parks/find', controller: :parks, action: :find, alias: 'find'
+    get 'parks/find', controller: :parks, action: :find
 
-    get 'parks/find_map', controller: :parks, action: :find_map, alias: 'find_map'
+    get 'parks/find_map', controller: :parks, action: :find_map
 
-    get 'parks/find/rents', controller: :parks, action: :find_rents, alias: 'find_rents'
+    get 'parks/find/rents', controller: :parks, action: :find_rents
 
-    get 'parks/rent', controller: :parks, action: :rent, alias: 'rent'
+    get 'parks/rent/:id', controller: :parks, action: :rent
+    
+    post 'parks/rent/reserved/:id', controller: :parks, action: :rent_reserved
 
     get 'parks/rent/comentary', controller: :parks, action: :rent_comentary, alias: 'rent_comentary'
 
@@ -25,6 +27,8 @@ Rails.application.routes.draw do
     get 'pages/register_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
 
     resources "users"
+    
+    resources "parks"
     
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 

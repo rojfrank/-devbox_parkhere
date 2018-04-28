@@ -38,6 +38,9 @@ $(document).ready(function(){
 <div style="margin-top:20px" > </div>
 <div class="container">
 
+    
+    <%= form_for @estacionamiento, :url => { :action => :create } do |f| %>
+    
     <form class="form-horizontal">
         <div class="row">
             <div class="col-sm-8">
