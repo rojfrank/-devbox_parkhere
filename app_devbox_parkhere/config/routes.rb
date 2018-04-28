@@ -27,6 +27,11 @@ Rails.application.routes.draw do
 
     resources "users"
     
+    
+    
+    
+    
+    
 
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 

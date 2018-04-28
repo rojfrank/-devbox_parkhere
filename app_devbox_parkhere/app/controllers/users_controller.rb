@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     end
 
     def index
-        @users_p = User.all
+        @users = User.all
     end
 
     def edit
