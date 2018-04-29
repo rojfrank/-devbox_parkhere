@@ -32,6 +32,8 @@ Rails.application.routes.draw do
 
     post 'parks/register', controller: :parks, action: :register_park    
 
+    post 'parks/register-', controller: :parks, action: :register_park_service
+
     get 'login/propietary' , controller: :login, action: :propietary, alias: 'propietary' 
 
     get 'login/user' , controller: :login, action: :user, alias: 'user' 
