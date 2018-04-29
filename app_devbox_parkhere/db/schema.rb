@@ -66,6 +66,17 @@ ActiveRecord::Schema.define(version: 20180429034347) do
     t.integer "co_distrito"
   end
 
+  create_table "publicidads", force: :cascade do |t|
+    t.string "Titulo"
+    t.string "Contenido"
+    t.date "Fecha_de_Inicio"
+    t.date "Fecha_de_Fin"
+    t.float "Tarifa"
+    t.string "Ubicacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "servicios", force: :cascade do |t|
     t.string "no_nombre"
     t.datetime "created_at", null: false

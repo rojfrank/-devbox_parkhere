@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :publicidads
   resources :comentarios
   resources :ideas
     
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
     get 'login/user'
     
     post '/login/user' => 'sessions#create'
+    
+    get '/logout' => 'sessions#destroy'
 
     get 'parks/find', controller: :parks, action: :find
 

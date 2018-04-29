@@ -9,13 +9,16 @@
     </head>
 
     <body>
+        <% if current_user %>
+        <% if current_user.Co_TipoUsuario == "1" %>
+        <%= render partial: 'layouts/menuprofileuser' %>
+        <% else %>
+        <%= render partial: 'layouts/menuprofileprop' %>
+        <% end %>
+        <% else %>
         <%= render partial: 'layouts/menu' %>
-
-
+        <% end %>
         <%= yield %>
-
-
-
 
     </body>
 </html>
