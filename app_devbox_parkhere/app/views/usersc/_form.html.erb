@@ -1,7 +1,14 @@
+<% content_for :"head" do %>
+<title>Registro de Usuario</title>
+<% end %>
 
+<div class="container">
+    <h2 class="text-center">Registro de Usuario</h2>
+    <div class="col-sm-offset-2 col-sm-6">
+        <div class="panel-body">
             <!--<form class="form-horizontal">-->
 
-            <%= form_for  @user, html: { class: "form-horizontal"} do |f| %>
+            <%= form_for  :user, :url => { :action => :create}, html: { class: "form-horizontal"} do |f| %>
 
 
 
@@ -89,7 +96,7 @@
                 <label class="control-label col-sm-4" >Contraseña</label>
                 <div class="col-sm-8">          
                     <%= f.password_field :Pw_Contrasenia, placeholder:"Ingrese contraseña", class:"form-control" %>
-                    <%= f.hidden_field :Co_TipoUsuario, value: 01 %>
+                    <%= f.hidden_field :Co_TipoUsuario, value: 02 %>
                 </div>
             </div>
 
@@ -123,4 +130,6 @@
 
             <% end %>
             <!--     </form>-->
-       
+        </div>
+    </div>
+</div>
