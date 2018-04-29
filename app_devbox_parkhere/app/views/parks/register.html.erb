@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 <div style="margin-top:20px" > </div>
 <div class="container">
-    <%= form_for @estacionamiento , :url => { :action => :register_park }, html: { class: "form-horizontal"}   do |f| %>
+    <%= form_for @estacionamiento , :url => { :action => :register_park } do |f| %>
         <div class="row">
             <div class="col-sm-8">
 
@@ -56,6 +56,7 @@ $(document).ready(function(){
                 </div>
 
                 <div class="form-group">
+<<<<<<< HEAD
                     <label class="control-label col-sm-3" for="address">Descripción adicional</label>
                     <div class="col-sm-6">
                         <%= f.text_field :tx_otros, placeholder:"", class:"form-control" %>
@@ -79,11 +80,37 @@ $(document).ready(function(){
                         $('#datetimepicker1').datetimepicker();
                     });
                 </script>                                        
+=======
+                    <label class="control-label col-sm-3"></label>
+                    <div class="col-sm-3">
+                        <select type="text" placeholder="Departamento" class="form-control">
+                            <option>Departamento</option>
+                            <option value="op1">Lima</option>
+                            <option value="op2">Arequipa</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <select type="text" placeholder="Provincia" class="form-control">
+                            <option>Provincia</option>
+                            <option value="op1">Lima</option>
+                            <option value="op2">Arequipa</option>
+                        </select>
+                    </div>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
 
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="address">Distrito</label>
                     <div class="col-sm-3">
+<<<<<<< HEAD
                         <%= f.select :co_distrito, options_for_select([['(Seleccione)', -1],['Lima', 010101], ['Arequipa', 010202]], :class => "form-control"), :class => "form-control" %>
+=======
+                        <select type="text" placeholder="Distrito" class="form-control">
+                            <option>Distrito</option>
+                            <option value="op1">Lima</option>
+                            <option value="op2">Arequipa</option>
+                        </select>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
                     </div>
                 </div>
 
@@ -140,7 +167,6 @@ $(document).ready(function(){
 
             <label class="control-label col-sm-2">Precio por hora</label>
             <div class="col-sm-2">
-                <%= f.text_field :nu_precioporhora, placeholder:"0.00", class:"form-control"  %>
             </div>
 
             <label class="control-label col-sm-2" for="phone">Ubicación según el tipo</label>
@@ -151,15 +177,34 @@ $(document).ready(function(){
         <div class="row">
             <div style="margin-top:30px" > </div>
 
+<<<<<<< HEAD
            
 
             
+=======
+            <div class="col-sm-3">
+
+
+
+                <div class="span4 col-sm-offset-1">
+                    <div style="margin-top:40px" > </div>
+                    <h3>Ubicación</h3>
+                    <address>
+                        <strong>Estacionamiento Los Portales</strong><br>
+                        Av. La Marina Nro. 2355 Urb. Pando<br>
+                        San Miguel<br>
+                        Lima<br>
+                    </address>
+                </div>
+
+            </div>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
 
             <div class="col-sm-9">
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="name">Ubicación Google Maps</label>
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" id="name" placeholder="">
                     </div>
                     <div class="col-sm-2">
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar
@@ -179,14 +224,14 @@ $(document).ready(function(){
                         <div class="form-group">
                             <label class="control-label col-sm-4" for="name">Coordenadas Longitud</label>
                             <div class="col-sm-4">
-                                <%= f.label :nu_longitud, placeholder:"-12.0832123", class:"control-label col-sm-4" %>
+                                <label class="control-label col-sm-4" for="name">-12.0832123</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-4"  for="name">Coordenadas Latitud</label>
+                            <label class="control-label col-sm-4" for="name">Coordenadas Latitud</label>
                             <div class="col-sm-4">
-                                <%= f.label :nu_latitud, placeholder:"-12.0832123", class:"control-label col-sm-4" %>
+                                <label class="control-label col-sm-4" for="name">-77.0804938</label>
                             </div>
                         </div>
                     </div>  
