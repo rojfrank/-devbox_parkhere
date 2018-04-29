@@ -12,7 +12,7 @@ class ParksController < ApplicationController
  
   def rent
       @estaciona = Estacionamiento.find(params[:id])
-      #@estacionaServ = EstacionamientoServicios.where("estacionamiento_id = ?", params[:id])
+      @estacionaServ = EstacionamientoServicios.where("estacionamiento_id = ?", params[:id])
       @alquiler = Alquiler.new
   end
     

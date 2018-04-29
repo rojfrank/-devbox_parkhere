@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 20180429015022) do
   create_table "alquiler_servicios", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "alquiler_id"
+    t.integer "estacionamiento_servicio_id"
   end
 
   create_table "alquilers", force: :cascade do |t|
@@ -41,6 +43,7 @@ ActiveRecord::Schema.define(version: 20180429015022) do
     t.text "tx_tituloopcional"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "estacionamiento_id"
   end
 
   create_table "estacionamientos", force: :cascade do |t|
@@ -57,6 +60,7 @@ ActiveRecord::Schema.define(version: 20180429015022) do
     t.datetime "fe_inicioreserva"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "co_distrito"
   end
 
   create_table "servicios", force: :cascade do |t|
