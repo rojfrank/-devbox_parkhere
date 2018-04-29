@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+        
     validates :No_Nombres, :presence => { message: "es requerido" },
     :length => { :minimum => 2, :too_short => "Nombre no válido" }
 

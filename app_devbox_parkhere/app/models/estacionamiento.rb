@@ -1,5 +1,5 @@
 class Estacionamiento < ApplicationRecord
-    belongs_to :user
-    belongs_to :tipo_estacionamiento
-    belongs_to :ubicacion_estacionamiento
+    validates :no_descriptivo, :presence => { message: "es requerido" }
+    validates :no_direccion, :presence => { message: "es requerido" }
+    
 end

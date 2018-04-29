@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
+        @user.email = @user.No_Correo
+        @user.password_digest = @user.Pw_Contrasenia
         if @user.save
             redirect_to :controller => :pages, :action => :index #, :id => @user.id
         else
@@ -27,6 +29,8 @@ class UsersController < ApplicationController
 
     def update
         @user = User.find(params[:id])
+        @user.email = @user.No_Correo
+        @user.password_digest = @user.Pw_Contrasenia
 
         if @user.update_attributes(user_params)
             redirect_to :action => :show, :id => @user.id

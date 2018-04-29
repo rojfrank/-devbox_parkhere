@@ -37,7 +37,15 @@ $(document).ready(function(){
 
 <div style="margin-top:20px" > </div>
 <div class="container">
-    <%= form_for @estacionamiento , :url => { :action => :register_park } do |f| %>
+    <%= form_for @estacionamiento , :url => { :action => :register_park }, html: { class: "form-horizontal"}   do |f| %>
+    <% if @estacionamiento.errors.any? %>
+        <h2>Error</h2>
+        <ul>
+            <% @estacionamiento.error.full_messages.each do |message| %>
+            <li><% message %></li>
+            <% end %>
+        </ul>
+    <% end %>
         <div class="row">
             <div class="col-sm-8">
 
@@ -56,29 +64,34 @@ $(document).ready(function(){
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-sm-3"></label>
-                    <div class="col-sm-3">
-                        <select type="text" placeholder="Departamento" class="form-control">
-                            <option>Departamento</option>
-                            <option value="op1">Lima</option>
-                            <option value="op2">Arequipa</option>
-                        </select>
+                    <label class="control-label col-sm-3" for="address">Descripción adicional</label>
+                    <div class="col-sm-6">
+                        <%= f.text_field :tx_otros, placeholder:"", class:"form-control" %>
                     </div>
+                </div>  
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="address">Fecha de inicio de reservas</label>
+                    <div class="col-sm-3">       
+                        
+                        <div class='input-group date' id='datetimepicker1' class="form-control col-sm-10">
+                            <%= f.text_field :fe_inicioreserva,:class =>"form-control" %>                   
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div> 
+                </div>      
+                
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>                                        
 
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="address">Distrito</label>
                     <div class="col-sm-3">
-                        <select type="text" placeholder="Provincia" class="form-control">
-                            <option>Provincia</option>
-                            <option value="op1">Lima</option>
-                            <option value="op2">Arequipa</option>
-                        </select>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <select type="text" placeholder="Distrito" class="form-control">
-                            <option>Distrito</option>
-                            <option value="op1">Lima</option>
-                            <option value="op2">Arequipa</option>
-                        </select>
+                        <%= f.select :co_distrito, options_for_select([['(Seleccione)', -1],['Lima', 010101], ['Arequipa', 010202]], :class => "form-control"), :class => "form-control" %>
                     </div>
                 </div>
 
@@ -89,6 +102,14 @@ $(document).ready(function(){
                     </div>
                     <label class="control-label" for="phone">(Opcional)</label>
                 </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="phone">Situación</label>
+                    <div class="col-sm-1">
+                        <%= f.check_box(:fl_situacion, :class =>"col-sm-5")  %>
+                    </div>
+                </div>                 
+
             </div>
 
             <div class="col-sm-4 border">
@@ -127,44 +148,26 @@ $(document).ready(function(){
 
             <label class="control-label col-sm-2">Precio por hora</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="price" placeholder="0.00">
+                <%= f.text_field :nu_precioporhora, placeholder:"0.00", class:"form-control"  %>
             </div>
 
             <label class="control-label col-sm-2" for="phone">Ubicación según el tipo</label>
             <div class="col-sm-2">
-                <select type="text" placeholder="Tipo" class="form-control">
-                    <option>Tipo</option>
-                    <option value="interior">Interior</option>
-                    <option value="mexterior">Exterior</option>
-                    <option value="aire">Aire</option>
-                </select>
+                <%= f.select :co_distrito, options_for_select([['(Seleccione)', -1], ['Interior', 1], ['Exterior', 2], ['Aire', 3]]), :class => "form-control"  %>
             </div>
         </div>
         <div class="row">
             <div style="margin-top:30px" > </div>
 
-            <div class="col-sm-3">
+           
 
-
-
-                <div class="span4 col-sm-offset-1">
-                    <div style="margin-top:40px" > </div>
-                    <h3>Ubicación</h3>
-                    <address>
-                        <strong>Estacionamiento Los Portales</strong><br>
-                        Av. La Marina Nro. 2355 Urb. Pando<br>
-                        San Miguel<br>
-                        Lima<br>
-                    </address>
-                </div>
-
-            </div>
+            
 
             <div class="col-sm-9">
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="name">Ubicación Google Maps</label>
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                     <div class="col-sm-2">
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar
@@ -178,20 +181,20 @@ $(document).ready(function(){
                         <iframe width="100%" height="350" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26245.536560175082!2d-77.08049382038041!3d-12.08321231575948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c971b3e5404f%3A0xf4ee63ada57c8fc9!2sEstacionamiento+Los+Portales!5e0!3m2!1ses-419!2spe!4v1523562963050"></iframe>
                     </div>
 
-
+                    <br>
                     <div class="span9">
 
                         <div class="form-group">
                             <label class="control-label col-sm-4" for="name">Coordenadas Longitud</label>
-                            <div class="col-sm-4">
-                                <label class="control-label col-sm-4" for="name">-12.0832123</label>
+                            <div class="col-sm-2">
+                                <%= f.text_field :nu_longitud, placeholder:"-12.0832123" %>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-4" for="name">Coordenadas Latitud</label>
-                            <div class="col-sm-4">
-                                <label class="control-label col-sm-4" for="name">-77.0804938</label>
+                            <label class="control-label col-sm-4"  for="name">Coordenadas Latitud</label>
+                            <div class="col-sm-2">
+                                <%= f.text_field :nu_latitud, placeholder:"-12.0832123" %>
                             </div>
                         </div>
                     </div>  
@@ -207,6 +210,7 @@ $(document).ready(function(){
 
 <div class="modal fade" id="pictures" role="dialog">
     <div class="modal-dialog">
+    
         <div class="modal-content">
             <div class="modal-header">
                 <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
@@ -284,6 +288,7 @@ $(document).ready(function(){
 
 
 <div class="modal fade" id="services" role="dialog">
+    <%= form_for @estacionamiento_servicio , :url => { :action => :register_park_service }, html: { class: "form-horizontal"}   do |f| %>
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -298,34 +303,32 @@ $(document).ready(function(){
                 <div class="form-group">
                     <label class="control-label col-sm-4" >Tipo de Servicio</label>
                     <div class="col-sm-6">
-                        <select type="text" placeholder="DNI" class="form-control">
-                            <option>Seleccionar tipo de servicio</option>
-                            <option value="lavado">Lavado</option>
-                            <option value="other">Otros</option>
-                        </select>
+
+                        <%= f.select :co_servicio, options_for_select([['(Seleccione)', -1],['Lavado', 1], ['Encerado', 2],['Limpieza interior', 3]], :class => "form-control"), :class => "form-control" %>
                     </div>
                 </div>
 
 
                 <div class="form-group" >
                     <label class="control-label col-sm-4" >Descripción</label>
-                    <div class="col-sm-8">          
+                    <div class="col-sm-8"> 
+
                         <textarea class="form-control" rows="4"></textarea> 
+                        
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label col-sm-4" >Tarifa</label>
                     <div class="col-sm-2">          
-                        <input type="Precio" class="form-control" id="tarifa" placeholder="0.00">
+                        <!-- <input type="Precio" class="form-control" id="tarifa" placeholder="0.00"> -->
+                        <%= f.text_field :nu_precio, placeholder:"0.00", class:"form-control"  %>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-3">
-                        <%= button_tag :class => "btn btn-info btn-block"  do %>
-                        <% link_to "Agregar" , parks_register_path %>
-                        <% end %>
+                        <%= f.submit 'Agregar' , :class => "btn button-default", :datatoggle => "modal"  %>
                     </div>
                     <div class="col-sm-offset-2 col-sm-3">                   
                         <button type="reset" class="btn btn-info btn-block" >Cancelar</button>
@@ -337,6 +340,7 @@ $(document).ready(function(){
         </div>
         </div>
                
-            </div>
         </div>
     </div>
+    <% end %>
+</div>

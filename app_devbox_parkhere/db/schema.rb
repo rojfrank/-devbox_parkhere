@@ -10,11 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180428072025) do
+ActiveRecord::Schema.define(version: 20180429034347) do
 
   create_table "alquiler_servicios", force: :cascade do |t|
+    t.integer "co_alquiler"
+    t.integer "co_estacionamiento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "alquiler_id"
+    t.integer "estacionamiento_servicio_id"
   end
 
   create_table "alquilers", force: :cascade do |t|
@@ -26,13 +30,23 @@ ActiveRecord::Schema.define(version: 20180428072025) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "comentarios", force: :cascade do |t|
+    t.string "usuario"
+    t.integer "estacionamiento"
+    t.string "comentario"
+    t.integer "calificacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "estacionamiento_servicios", force: :cascade do |t|
-    t.integer "estacionamiento_id"
     t.float "nu_precio"
     t.string "tx_descripcion"
     t.text "tx_tituloopcional"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "estacionamiento_id"
+    t.integer "co_servicio"
   end
 
   create_table "estacionamientos", force: :cascade do |t|
@@ -47,6 +61,18 @@ ActiveRecord::Schema.define(version: 20180428072025) do
     t.boolean "fl_situacion"
     t.text "tx_otros"
     t.datetime "fe_inicioreserva"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "co_distrito"
+  end
+
+  create_table "publicidads", force: :cascade do |t|
+    t.string "Titulo"
+    t.string "Contenido"
+    t.date "Fecha_de_Inicio"
+    t.date "Fecha_de_Fin"
+    t.float "Tarifa"
+    t.string "Ubicacion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -97,23 +123,8 @@ ActiveRecord::Schema.define(version: 20180428072025) do
     t.string "Co_TipoUsuario"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "usuarios", force: :cascade do |t|
-    t.integer "co_usuario"
-    t.string "no_nombres"
-    t.string "no_apellidopaterno"
-    t.string "no_apellidomaterno"
-    t.boolean "fl_sexo"
-    t.string "no_documento"
-    t.string "no_correo"
-    t.string "pw_contrasenia"
-    t.date "fe_nacimiento"
-    t.string "no_celular"
-    t.string "no_direccion"
-    t.boolean "fl_situacion"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "password_digest"
   end
 
 end
