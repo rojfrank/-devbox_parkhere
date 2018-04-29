@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180429030718) do
-=======
-ActiveRecord::Schema.define(version: 20180429015022) do
->>>>>>> 3abcf7c9c17de73088604fecc29d181a94ef9e24
 
   create_table "alquiler_servicios", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -65,7 +61,6 @@ ActiveRecord::Schema.define(version: 20180429015022) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "co_distrito"
-<<<<<<< HEAD
   end
 
   create_table "publicidads", force: :cascade do |t|
@@ -77,8 +72,6 @@ ActiveRecord::Schema.define(version: 20180429015022) do
     t.string "Ubicacion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-=======
->>>>>>> 3abcf7c9c17de73088604fecc29d181a94ef9e24
   end
 
   create_table "servicios", force: :cascade do |t|
