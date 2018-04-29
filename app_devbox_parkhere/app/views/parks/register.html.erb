@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 <div style="margin-top:20px" > </div>
 <div class="container">
-    <%= form_for @estacionamiento , :url => { :action => :register_park } do |f| %>
+    <%= form_for @estacionamiento , :url => { :action => :register_park }, html: { class: "form-horizontal"}   do |f| %>
         <div class="row">
             <div class="col-sm-8">
 
@@ -54,6 +54,13 @@ $(document).ready(function(){
                         <%= f.text_field :no_direccion, placeholder:"Ingrese dirección", class:"form-control" %>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="address">Descripción adicional</label>
+                    <div class="col-sm-6">
+                        <%= f.text_field :tx_otros, placeholder:"", class:"form-control" %>
+                    </div>
+                </div>                
 
                 <div class="form-group">
                     <label class="control-label col-sm-3"></label>
@@ -74,13 +81,32 @@ $(document).ready(function(){
                     </div>
 
                     <div class="col-sm-3">
-                        <select type="text" placeholder="Distrito" class="form-control">
-                            <option>Distrito</option>
-                            <option value="op1">Lima</option>
-                            <option value="op2">Arequipa</option>
-                        </select>
+                        <%= f.select :co_distrito, options_for_select([['Lima', 010101], ['Arequipa', 010202]]) %>
                     </div>
                 </div>
+
+                        <div class="col-lg-4">
+
+            <div class='col-sm-10'>
+                <div class="form-group">       
+                    <h5>Fecha de inicio de reservas</h5>
+                    <div class='input-group date' id='datetimepicker1'>
+                        <%= f.text_field :fe_inicioreserva , :class => "form-control" %>                   
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker1').datetimepicker();
+                });
+            </script>
+
+
+        </div>
 
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="phone">Teléfono fijo</label>
@@ -127,7 +153,7 @@ $(document).ready(function(){
 
             <label class="control-label col-sm-2">Precio por hora</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="price" placeholder="0.00">
+                <%= f.text_field :nu_precioporhora, placeholder:"0.00", class:"form-control"  %>
             </div>
 
             <label class="control-label col-sm-2" for="phone">Ubicación según el tipo</label>
@@ -151,7 +177,8 @@ $(document).ready(function(){
                     <div style="margin-top:40px" > </div>
                     <h3>Ubicación</h3>
                     <address>
-                        <strong>Estacionamiento Los Portales</strong><br>
+                    <%= f.text_field :no_ubicacion, placeholder:"Estacionamiento Los Portales", class:"form-control"  %>
+                    <br>
                         Av. La Marina Nro. 2355 Urb. Pando<br>
                         San Miguel<br>
                         Lima<br>
@@ -159,12 +186,21 @@ $(document).ready(function(){
                 </div>
 
             </div>
+            <div class="col-sm-3">
+                <div class="span4 col-sm-offset-1">
+                <div style="margin-top:40px" > </div>
+                    <h3>Situacion</h3>
+                    <%= f.check_box(:fl_situacion, class:"form-control")  %>
+                </div>
+            </div>            
+
+            
 
             <div class="col-sm-9">
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="name">Ubicación Google Maps</label>
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" id="name" placeholder="">
+                        <input type="text" class="form-control" placeholder="">
                     </div>
                     <div class="col-sm-2">
                         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar
@@ -184,14 +220,14 @@ $(document).ready(function(){
                         <div class="form-group">
                             <label class="control-label col-sm-4" for="name">Coordenadas Longitud</label>
                             <div class="col-sm-4">
-                                <label class="control-label col-sm-4" for="name">-12.0832123</label>
+                                <%= f.label :nu_longitud, placeholder:"-12.0832123", class:"control-label col-sm-4" %>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-4" for="name">Coordenadas Latitud</label>
+                            <label class="control-label col-sm-4"  for="name">Coordenadas Latitud</label>
                             <div class="col-sm-4">
-                                <label class="control-label col-sm-4" for="name">-77.0804938</label>
+                                <%= f.label :nu_latitud, placeholder:"-12.0832123", class:"control-label col-sm-4" %>
                             </div>
                         </div>
                     </div>  

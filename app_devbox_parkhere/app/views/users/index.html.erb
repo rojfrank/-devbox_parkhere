@@ -1,17 +1,63 @@
-<table>
-  <tr>
-    <th>Nombres</th>
-    <th>Apellido P.</th>
-    <th></th>
-    <th></th>
-  </tr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lista de usuarios</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.No_Nombres %></td>
-    <td><%= user.No_ApellidoPaterno %></td>
-    <td><%= link_to 'Show', :action => :show, :id => user.id %></td>
-    <td><%= link_to 'Edit', :action => :edit, :id => user.id %></td>
-  </tr>
-<% end %>
-</table>
+        <div class="container">
+            <h2>Lista de Usuarios</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Tipo de usuario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @users.each do |user| %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td><%= user.No_Nombres %></td>
+
+                        <td><%= user.No_ApellidoPaterno + " " + user.No_ApellidoMaterno %></td>
+
+
+                        <td><%= user.No_Correo %></td>
+
+                        <td>
+                            <% if user.Co_TipoUsuario == "1" %>
+                            Propietario
+                            <% else %>
+                            cliente
+                            <% end %>
+                        </td>
+
+                        <td><%= link_to 'Ver', :action => :show, :id => user.id %></td>
+
+                        <td><%= link_to 'Editar', :action => :edit, :id => user.id %></td>
+                        
+                       <!-- <td><%= link_to 'Eliminar', { :action => :destroy, :id => user.id }, :method => :delete, :data => { :confirm => 'Estas seguro?' } %></td>-->
+                        
+                        
+                    </tr>
+
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
+
+
+
