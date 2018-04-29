@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :publicidads
   resources :comentarios
   resources :ideas
     get 'login/propietary'
