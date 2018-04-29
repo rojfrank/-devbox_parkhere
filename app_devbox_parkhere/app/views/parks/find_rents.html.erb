@@ -52,8 +52,9 @@
 
     <!-- table container -->
 
-    <div class="col-lg-12">
-        <hr> 
+    <div class="col-sm-10">
+        <hr class="invisible"> 
+        <% @estacionamientos.each do |estaciona| %>
         <div class="row">
             <div class="col-md-2">
                 <a href="#">
@@ -62,72 +63,13 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title">
-                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
+                    <%= link_to estaciona.no_descriptivo, :action => :rent, :id => estaciona.id %>
                 </h4>
-                <h5>S/ 10.00</h5>
-                <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
+                <h5>S/ <%= estaciona.nu_precioporhora %></h5>
+                <p class="card-text">Dirección: <%= estaciona.no_direccion %></p>
             </div>
         </div>
-        <hr> 
-        <div class="row">
-            <div class="col-md-2">
-                <a href="#">
-                    <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="#">Estacionamiento como Miraflores</a>
-                </h4>
-                <h5>S/ 10.00</h5>
-                <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
-            </div>
-        </div>
-        <hr> 
-
-        <div class="row">
-            <div class="col-md-2">
-                <a href="#">
-                    <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
-                </h4>
-                <h5>S/ 10.00</h5>
-                <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
-            </div>
-        </div>
-        <hr> 
-        <div class="row">
-            <div class="col-md-2">
-                <a href="#">
-                    <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
-                </h4>
-                <h5>S/ 10.00</h5>
-                <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
-            </div>
-        </div>
-        <hr> 
-        <div class="row">
-            <div class="col-md-2">
-                <a href="#">
-                    <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
-                </a>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <%= link_to 'Estacionamiento como Miraflores', parks_rent_path %>
-                </h4>
-                <h5>S/ 10.00</h5>
-                <p class="card-text">Av. Benavides 123 Lima, Lima, Miraflores</p>
-            </div>
-        </div>
+        <hr>   
+        <% end %>
     </div>
 </div>

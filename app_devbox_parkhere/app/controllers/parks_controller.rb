@@ -62,7 +62,7 @@ class ParksController < ApplicationController
   end
 
   def find_rents
-      
+    @estacionamientos = Estacionamiento.all    
   end
     
   private
