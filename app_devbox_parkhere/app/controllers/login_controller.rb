@@ -3,5 +3,8 @@ class LoginController < ApplicationController
   end
 
   def user
+      
+      
+      
   end
 end
