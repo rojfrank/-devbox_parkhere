@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :ideas
     get 'login/propietary'
 
     get 'login/user'
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
     get 'parks/find/rents', controller: :parks, action: :find_rents
 
     get 'parks/rent/:id', controller: :parks, action: :rent
-    
+
     post 'parks/rent/reserved/:id', controller: :parks, action: :rent_reserved
 
     get 'parks/rent/comentary', controller: :parks, action: :rent_comentary, alias: 'rent_comentary'
@@ -29,18 +30,12 @@ Rails.application.routes.draw do
     get 'pages/register_propietary' , controller: :pages, action: :register_propietary, alias: 'register_propietary'  
 
     resources "users"
-    
-<<<<<<< HEAD
-    
-    
-    
-    
-    
 
-=======
     resources "parks"
-    
->>>>>>> e5690c121e2d8c17d18be271e26ec997fa68426b
+
+    resources "usersc"
+
+
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 
     get 'parks/services', controller: :parks, action: :services, alias: 'services'
