@@ -10,9 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180428072025) do
+ActiveRecord::Schema.define(version: 20180428142540) do
 
   create_table "alquiler_servicios", force: :cascade do |t|
+    t.integer "co_alquiler"
+    t.integer "co_estacionamiento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,7 +29,6 @@ ActiveRecord::Schema.define(version: 20180428072025) do
   end
 
   create_table "estacionamiento_servicios", force: :cascade do |t|
-    t.integer "estacionamiento_id"
     t.float "nu_precio"
     t.string "tx_descripcion"
     t.text "tx_tituloopcional"
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 20180428072025) do
     t.datetime "fe_inicioreserva"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "co_distrito"
   end
 
   create_table "servicios", force: :cascade do |t|
@@ -95,23 +97,6 @@ ActiveRecord::Schema.define(version: 20180428072025) do
     t.string "No_Correo"
     t.string "Pw_Contrasenia"
     t.string "Co_TipoUsuario"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "usuarios", force: :cascade do |t|
-    t.integer "co_usuario"
-    t.string "no_nombres"
-    t.string "no_apellidopaterno"
-    t.string "no_apellidomaterno"
-    t.boolean "fl_sexo"
-    t.string "no_documento"
-    t.string "no_correo"
-    t.string "pw_contrasenia"
-    t.date "fe_nacimiento"
-    t.string "no_celular"
-    t.string "no_direccion"
-    t.boolean "fl_situacion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
