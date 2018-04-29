@@ -3,9 +3,14 @@ Rails.application.routes.draw do
   resources :publicidads
   resources :comentarios
   resources :ideas
-    get 'login/propietary'
+    
+    get '/login/propietary'
+    
+    post '/login/propietary' => 'sessions#create'
 
     get 'login/user'
+    
+    post '/login/user' => 'sessions#create'
 
     get 'parks/find', controller: :parks, action: :find
 
@@ -37,7 +42,6 @@ Rails.application.routes.draw do
 
     resources "usersc"
 
-
     get 'pages/register_user' , controller: :pages, action: :register_user, alias: 'register_user'     
 
     get 'parks/services', controller: :parks, action: :services, alias: 'services'
@@ -51,6 +55,6 @@ Rails.application.routes.draw do
     get 'pages/index_login', controller: :pages, action: :index_login, alias: 'index_login'
 
     root 'pages#index'
-
+    
     # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

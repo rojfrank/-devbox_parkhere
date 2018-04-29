@@ -56,6 +56,31 @@ $(document).ready(function(){
                 </div>
 
                 <div class="form-group">
+<<<<<<< HEAD
+                    <label class="control-label col-sm-3" for="address">Descripción adicional</label>
+                    <div class="col-sm-6">
+                        <%= f.text_field :tx_otros, placeholder:"", class:"form-control" %>
+                    </div>
+                </div>  
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="address">Fecha de inicio de reservas</label>
+                    <div class="col-sm-3">       
+                        
+                        <div class='input-group date' id='datetimepicker1' class="form-control col-sm-10">
+                            <%= f.text_field :fe_inicioreserva,:class =>"form-control" %>                   
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div> 
+                </div>      
+                
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>                                        
+=======
                     <label class="control-label col-sm-3"></label>
                     <div class="col-sm-3">
                         <select type="text" placeholder="Departamento" class="form-control">
@@ -72,13 +97,20 @@ $(document).ready(function(){
                             <option value="op2">Arequipa</option>
                         </select>
                     </div>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
 
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="address">Distrito</label>
                     <div class="col-sm-3">
+<<<<<<< HEAD
+                        <%= f.select :co_distrito, options_for_select([['(Seleccione)', -1],['Lima', 010101], ['Arequipa', 010202]], :class => "form-control"), :class => "form-control" %>
+=======
                         <select type="text" placeholder="Distrito" class="form-control">
                             <option>Distrito</option>
                             <option value="op1">Lima</option>
                             <option value="op2">Arequipa</option>
                         </select>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
                     </div>
                 </div>
 
@@ -89,6 +121,14 @@ $(document).ready(function(){
                     </div>
                     <label class="control-label" for="phone">(Opcional)</label>
                 </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="phone">Situación</label>
+                    <div class="col-sm-1">
+                        <%= f.check_box(:fl_situacion, :class =>"col-sm-5")  %>
+                    </div>
+                </div>                 
+
             </div>
 
             <div class="col-sm-4 border">
@@ -127,22 +167,21 @@ $(document).ready(function(){
 
             <label class="control-label col-sm-2">Precio por hora</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="price" placeholder="0.00">
             </div>
 
             <label class="control-label col-sm-2" for="phone">Ubicación según el tipo</label>
             <div class="col-sm-2">
-                <select type="text" placeholder="Tipo" class="form-control">
-                    <option>Tipo</option>
-                    <option value="interior">Interior</option>
-                    <option value="mexterior">Exterior</option>
-                    <option value="aire">Aire</option>
-                </select>
+                <%= f.select :co_distrito, options_for_select([['(Seleccione)', -1], ['Interior', 1], ['Exterior', 2], ['Aire', 3]]), :class => "form-control"  %>
             </div>
         </div>
         <div class="row">
             <div style="margin-top:30px" > </div>
 
+<<<<<<< HEAD
+           
+
+            
+=======
             <div class="col-sm-3">
 
 
@@ -159,6 +198,7 @@ $(document).ready(function(){
                 </div>
 
             </div>
+>>>>>>> 40ae01f65266c8b3e190b07999f5e3de8addbbde
 
             <div class="col-sm-9">
                 <div class="form-group">
