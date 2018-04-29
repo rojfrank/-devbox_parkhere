@@ -38,6 +38,14 @@ $(document).ready(function(){
 <div style="margin-top:20px" > </div>
 <div class="container">
     <%= form_for @estacionamiento , :url => { :action => :register_park }, html: { class: "form-horizontal"}   do |f| %>
+    <% if @estacionamiento.errors.any? %>
+        <h2>Error</h2>
+        <ul>
+            <% @estacionamiento.error.full_messages.each do |message| %>
+            <li><% message %></li>
+            <% end %>
+        </ul>
+    <% end %>
         <div class="row">
             <div class="col-sm-8">
 
