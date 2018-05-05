@@ -127,4 +127,21 @@ ActiveRecord::Schema.define(version: 20180429034347) do
     t.string "password_digest"
   end
 
+  create_table "usuarios", force: :cascade do |t|
+    t.integer "co_usuario"
+    t.string "no_nombres"
+    t.string "no_apellidopaterno"
+    t.string "no_apellidomaterno"
+    t.boolean "fl_sexo"
+    t.string "no_documento"
+    t.string "no_correo"
+    t.string "pw_contrasenia"
+    t.date "fe_nacimiento"
+    t.string "no_celular"
+    t.string "no_direccion"
+    t.boolean "fl_situacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
