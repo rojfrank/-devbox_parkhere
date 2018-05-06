@@ -1,3 +1,8 @@
+<head>
+  <style>
+    body { background-color: #81BEF7; }
+  </style>
+</head>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -16,6 +21,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><%= link_to 'Inicio', root_path %></li>
                 <li><%= link_to 'Buscar estacionamientos', parks_find_path %></li>
+                 <li><%= link_to 'Registrar estacionamiento', parks_register_path %></li>
+                 <li><%= link_to 'Registrar Publicidad', publicidads_path %></li>
             </ul>		
 
             <ul class="nav navbar-nav navbar-right">

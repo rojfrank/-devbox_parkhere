@@ -1,37 +1,71 @@
-<%= form_with(model: comentario, local: true) do |form| %>
-  <% if comentario.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(comentario.errors.count, "error") %> prohibited this comentario from being saved:</h2>
+  <head>
+    <style>
+    body { background-color: #81BEF7; }
+  </style>
+</head>
 
-      <ul>
-      <% comentario.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :usuario %>
-    <%= form.text_field :usuario, id: :comentario_usuario %>
-  </div>
+<%= form_for  @comentario, html: { class: "form-horizontal"} do |form| %>
 
-  <div class="field">
-    <%= form.label :estacionamiento %>
-    <%= form.number_field :estacionamiento, id: :comentario_estacionamiento %>
-  </div>
 
-  <div class="field">
-    <%= form.label :comentario %>
-    <%= form.text_field :comentario, id: :comentario_comentario %>
-  </div>
+<% if comentario.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(comentario.errors.count, "error") %> prohibited this comentario from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :calificacion %>
-    <%= form.number_field :calificacion, id: :comentario_calificacion %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <ul>
+    <% comentario.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
+
+<div class="panel panel-default col-sm-offset-2 col-sm-9" style="background-color:#81BEF7;">
+
+
+  <div class="panel-body">
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-3">Usuario </label>
+      <div class="col-sm-12">
+         <%= form.text_field :usuario,placeholder:"Ingrese Nombre de usuario", class:"form-control" %>
+      </div>
+    </div>  
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3">Estacionamiento/ubicacion </label>
+        <div class="col-sm-12">
+          <%= form.text_field :estacionamiento,placeholder:"Ingrese estacionamiento", class:"form-control" %>
+        </div>
+      </div>
+
+       
+        <div class="form-group">
+          <label class="control-label col-sm-3">Comentario </label>
+          <div class="col-sm-12">
+            <%= form.text_field :comentario,placeholder:"Ingrese el comentario", class:"form-control" %>
+          </div>
+        </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-3">Calificacion </label>
+            <div class="col-sm-12">   
+              <%= form.number_field :calificacion, id: :comentario_calificacion %>
+            </div>
+          </div>
+
+
+           
+
+
+          <div class="actions">
+                   
+            <%= form.submit'Crear Comentario' %>
+
+          </div>
+          <% end %>
+        </div>
+      </div>
+

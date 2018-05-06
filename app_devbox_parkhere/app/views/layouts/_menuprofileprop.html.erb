@@ -17,12 +17,18 @@
                 <li class="active"><%= link_to 'Inicio', root_path %></li>
                 <li><%= link_to 'Buscar estacionamientos', parks_find_path %></li>
                 <li><%= link_to 'Mis estacionamientos', parks_find_rents_path %></li>
+                <li><%= link_to 'Registrar estacionamiento', parks_register_path %></li>
+
             </ul>		
+
+
 
             <ul class="nav navbar-nav navbar-right">
                 <li><%= link_to current_user.No_Nombres, :controller => :users, :action => :edit, :id => current_user.id %></li>
                 <li><a href=<%= '/logout' %>><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesion</a></li>
             </ul>	
+
+
         </div>
     </div>
 </nav>

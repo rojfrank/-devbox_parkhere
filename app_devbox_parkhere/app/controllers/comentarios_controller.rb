@@ -28,7 +28,7 @@ class ComentariosController < ApplicationController
 
     respond_to do |format|
       if @comentario.save
-        format.html { redirect_to @comentario, notice: 'Comentario was successfully created.' }
+        format.html { redirect_to @comentario, notice: 'Comentario fue Creado Exitosamente.' }
         format.json { render :show, status: :created, location: @comentario }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ComentariosController < ApplicationController
   def update
     respond_to do |format|
       if @comentario.update(comentario_params)
-        format.html { redirect_to @comentario, notice: 'Comentario was successfully updated.' }
+        format.html { redirect_to @comentario, notice: 'Comentario Actualizado.' }
         format.json { render :show, status: :ok, location: @comentario }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ComentariosController < ApplicationController
   def destroy
     @comentario.destroy
     respond_to do |format|
-      format.html { redirect_to comentarios_url, notice: 'Comentario was successfully destroyed.' }
+      format.html { redirect_to comentarios_url, notice: 'Comentario Eliminado.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class ComentariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comentario_params
-      params.require(:comentario).permit(:usuario, :estacionamiento, :comentario, :calificacion)
+      params.require(:comentario).permit(:usuario, :estacionamiento, :direccion, :comentario, :calificacion)
     end
 end
