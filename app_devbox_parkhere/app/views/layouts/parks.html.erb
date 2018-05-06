@@ -11,9 +11,9 @@
     <body>
         <% if current_user %>
         <% if current_user.Co_TipoUsuario == "1" %>
-        <%= render partial: 'layouts/menuprofileuser' %>
-        <% else %>
         <%= render partial: 'layouts/menuprofileprop' %>
+        <% else %>
+        <%= render partial: 'layouts/menuprofileuser' %>
         <% end %>
         <% else %>
         <%= render partial: 'layouts/menu' %>

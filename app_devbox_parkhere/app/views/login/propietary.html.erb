@@ -16,14 +16,14 @@
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">Correo:</label>
             <div class="col-sm-8">
-                <input type="email" class="form-control" id="email" placeholder="Ingrese correo">
+                <%= text_field_tag :email %>
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-sm-2" for="password">Contraseña:</label>
             <div class="col-sm-8">          
-                <input type="password" class="form-control" id="password" placeholder="Ingrese contraseña">
+                <%= password_field_tag :password %>
             </div>
         </div>
 
