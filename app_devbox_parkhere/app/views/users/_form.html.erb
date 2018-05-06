@@ -84,7 +84,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-4" for="email">Correo</label>
                 <div class="col-sm-8">          
-                    <%= f.text_field :No_Correo, placeholder:"Ingrese Correo", class:"form-control" %>
+                    <%= f.text_field :email, placeholder:"Ingrese Correo", class:"form-control" %>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-4" >Contraseña</label>
                 <div class="col-sm-8">          
-                    <%= f.password_field :Pw_Contrasenia, placeholder:"Ingrese contraseña", class:"form-control" %>
+                    <%= f.password_field :password, placeholder:"Ingrese contraseña", class:"form-control" %>
                     <%= f.hidden_field :Co_TipoUsuario, value: 01 %>
                 </div>
             </div>
