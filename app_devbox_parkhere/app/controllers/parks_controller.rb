@@ -34,8 +34,9 @@ class ParksController < ApplicationController
 
   def register_park
       @estacionamiento = Estacionamiento.new(estacionamiento_params)
+      @estacionamiento.id_user = current_user.id
       if @estacionamiento.save
-          redirect_to :action => :find
+          redirect_to :action => :find_parks_propietary
       end
   end
 
@@ -59,6 +60,10 @@ class ParksController < ApplicationController
 
   def find_rents
     @estacionamientos = Estacionamiento.all    
+  end
+    
+  def find_parks_propietary
+    @estacionamientos = Estacionamiento.where('id_user=?',current_user.id) 
   end
     
   private

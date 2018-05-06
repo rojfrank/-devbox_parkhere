@@ -1,0 +1,36 @@
+
+<div class="container">
+
+    <h1>Mis estacionamientos</h1>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker2').datetimepicker();
+        });
+    </script>
+
+
+
+    <!-- table container -->
+
+    <div class="col-sm-10">
+        <hr class="invisible"> 
+        <% @estacionamientos.each do |estaciona| %>
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#">
+                    <%= image_tag('demo.jpg' , :class => "img-rounded" , :size => "120x120") %>
+                </a>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <%= link_to estaciona.no_descriptivo, :action => :rent, :id => estaciona.id %>
+                </h4>
+                <h5>S/ <%= estaciona.nu_precioporhora %></h5>
+                <p class="card-text">Dirección: <%= estaciona.no_direccion %></p>
+            </div>
+        </div>
+        <hr>   
+        <% end %>
+    </div>
+</div>

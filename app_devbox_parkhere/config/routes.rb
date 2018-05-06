@@ -21,6 +21,8 @@ Rails.application.routes.draw do
     get 'parks/find/rents', controller: :parks, action: :find_rents
 
     get 'parks/rent/:id', controller: :parks, action: :rent
+    
+    get 'find/parks/propietary' , controller: :parks, action: :find_parks_propietary
 
     post 'parks/rent/reserved/:id', controller: :parks, action: :rent_reserved
 
