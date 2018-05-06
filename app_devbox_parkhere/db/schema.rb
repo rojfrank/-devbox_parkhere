@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(version: 20180506160235) do
 
   create_table "alquiler_servicios", force: :cascade do |t|
+    t.integer "co_alquiler"
+    t.integer "co_estacionamiento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "alquiler_id"
