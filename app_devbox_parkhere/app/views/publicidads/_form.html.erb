@@ -1,47 +1,79 @@
-<%= form_with(model: publicidad, local: true) do |form| %>
-  <% if publicidad.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(publicidad.errors.count, "error") %> prohibited this publicidad from being saved:</h2>
+<head>
+  <style>
+  body { background-color: #81BEF7; }
+</style>
+</head>
 
-      <ul>
-      <% publicidad.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for  @publicidad, html: { class: "form-horizontal"} do |form| %>
 
-  <div class="field">
-    <%= form.label :Titulo %>
-    <%= form.text_field :Titulo, id: :publicidad_Titulo %>
-  </div>
+<% if publicidad.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(publicidad.errors.count, "error") %> prohibited this publicidad from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :Contenido %>
-    <%= form.text_field :Contenido, id: :publicidad_Contenido %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Fecha_de_Inicio %>
-    <%= form.date_select :Fecha_de_Inicio, id: :publicidad_Fecha_de_Inicio %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Fecha_de_Fin %>
-    <%= form.date_select :Fecha_de_Fin, id: :publicidad_Fecha_de_Fin %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Tarifa %>
-    <%= form.text_field :Tarifa, id: :publicidad_Tarifa %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Ubicacion %>
-    <%= form.text_field :Ubicacion, id: :publicidad_Ubicacion %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <ul>
+    <% publicidad.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
+
+
+<div class="panel panel-default col-sm-offset-2 col-sm-9" style="background-color:#81BEF7;">
+
+
+  <div class="panel-body">
+ 
+    <div class="form-group">
+      <label class="control-label col-sm-2">Titulo </label>
+      <div class="col-sm-8">
+        <%= form.text_field :Titulo,placeholder:"Ingrese Titulo", class:"form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Contenido </label>
+      <div class="col-sm-8">
+        <%= form.text_field :Contenido,placeholder:"Ingrese la descripcion de la Publicidad", class:"form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Fecha de Inicio </label>
+      <div class="col-sm-8">
+        <%= form.date_select :Fecha_de_Inicio, id: :publicidad_Fecha_de_Inicio, class:"form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+     <label class="control-label col-sm-2">Fecha de Fin </label>
+     <div class="col-sm-8">
+      <%= form.date_select :Fecha_de_Fin, id: :publicidad_Fecha_de_Fin, class:"form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">Tarifa </label>
+    <div class="col-sm-8">
+      <%= form.text_field :Tarifa,placeholder:"Ingrese la Tarifa", class:"form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+   <label class="control-label col-sm-2">Ubicacion </label>
+   <div class="col-sm-8">
+    <%= form.text_field :Ubicacion,placeholder:"Ingrese la Ubicacion", class:"form-control" %>
+  </div>
+</div>
+
+
+
+
+
+<div class="actions">
+  <%= form.submit 'Crear Publicidad' %>
+</div>
+<% end %>
+</div>
+</div>
+

@@ -77,73 +77,9 @@
         </div>
     </div>
     <% end %>
-    <h2>Comentarios</h2>
-    <div class="media">
 
-        <div class="media-body" style="padding-left: 5px">
-            <h3 class="media-heading">Pedro Perez <small><i>Posteado en February 19, 2018</i></small></h3>
-            <h5>comentario Inicial.</h5>
-            <button class="btn btn-default" data-toggle="collapse" data-target="#subcomentar">Responder</button>
-            <div id="subcomentar" class="collapse">
-                <br>
-                <form>
-                    <div class="form-group">
-                        <label for="sresponder" class="sr-only">Responder</label>
-                        <input type="text" class="form-control" id="sresponder" placeholder="Comentar">
-                    </div>
-                    <button type="submit" class="btn btn-primary ">Enviar</button>
-                </form>          
-            </div>
-            <!-- Nested media object -->
-            <div class="media">
 
-                <div class="media-body" style="padding-left: 5px">
-                    <h3 class="media-heading">Luz Garcia <small><i>Posteado en February 19, 2018</i></small></h3>
-                    <h5>Sub comentario.</h5>
-                    <button class="btn btn-default" data-toggle="collapse" data-target="#subcomentar2">Responder</button>
-                    <div id="subcomentar2" class="collapse">
-                        <br>
-                        <form>
-                            <div class="form-group">
-                                <label for="sresponder2" class="sr-only">Responder</label>
-                                <input type="text" class="form-control" id="sresponder2" placeholder="Comentar">
-                            </div>
-                            <button type="submit" class="btn btn-primary ">Enviar</button>
-                        </form>          
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
-    <div class="media">
-
-        <div class="media-body" style="padding-left: 5px">
-            <h3 class="media-heading">Juan Albitrez <small><i>Posteado en February 19, 2018</i></small></h3>
-            <h5>Comentario adicional.</h5>
-            <button class="btn btn-default" data-toggle="collapse" data-target="#subcomentar1">Responder</button>
-            <div id="subcomentar1" class="collapse">
-                <br>
-                <form>
-                    <div class="form-group">
-                        <label for="sresponder" class="sr-only">Responder</label>
-                        <input type="text" class="form-control" id="sresponder1" placeholder="Comentar">
-                    </div>
-                    <button type="submit" class="btn btn-primary ">Enviar</button>
-                </form>          
-            </div>
-        </div>
-    </div>
-    <br>
-    <h3>Dejar Comentario</h3>
-    <form>
-        <div class="form-group">
-            <label for="responder" class="sr-only">Responder</label>
-            <input type="text" class="form-control" id="responder" placeholder="Comentar">
-        </div>
-        <button type="submit" class="btn btn-primary ">Enviar</button>
-    </form>
-</div>
 
 
 
@@ -227,3 +163,18 @@
         });
     });
 </script>
+
+
+    <h3>Dejar Comentario</h3>
+
+    <div class="col-sm-6">
+
+                            <div class="col-sm-offset-1 col-sm-8" style="margin-top: 20px">
+                                <a href=/comentarios/new>
+                                    <button type="button" class="btn btn-success btn-block">Nuevo Comentario
+                                    </button>
+                                </a>
+                            </div>
+                        </div>   
+    
+</div>
