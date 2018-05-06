@@ -1,135 +1,132 @@
-<% content_for :"head" do %>
-<title>Registro de Usuario</title>
-<% end %>
-
-<div class="container">
-    <h2 class="text-center">Registro de Usuario</h2>
-    <div class="col-sm-offset-2 col-sm-6">
-        <div class="panel-body">
-            <!--<form class="form-horizontal">-->
-
-            <%= form_for  :user, :url => { :action => :create}, html: { class: "form-horizontal"} do |f| %>
+<head>
+    <style>
+        body { background-color: #81BEF7; }
+    </style>
+</head>
 
 
 
-            <div class="form-group">
-                <label class="control-label col-sm-4">Nombres </label>
-                <div class="col-sm-8">
-                    <%= f.text_field :No_Nombres, placeholder:"Ingrese nombres", class:"form-control" %>
+<!--<form class="form-horizontal">-->
 
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Apellido Paterno</label>
-                <div class="col-sm-8">          
-                    <%= f.text_field :No_ApellidoPaterno, placeholder:"Ingrese apellido Paterno", class:"form-control" %>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Apellido Materno</label>
-                <div class="col-sm-8">          
-                    <%= f.text_field :No_ApellidoMaterno, placeholder:"Ingrese apellido Materno", class:"form-control" %>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Fecha de Nacimiento</label>
-                <div class="col-sm-8">          
-                    <%= f.date_field :Fe_Nacimiento, placeholder:"Date of Birth", class:"form-control" %>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Celular</label>
-                <div class="col-sm-8">          
-                    <%= f.text_field :No_Celular, placeholder:"Ingrese Celular", class:"form-control" %>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4">Sexo</label>
-
-                <div class="col-sm-6">
-                    <%= f.radio_button :Fl_Sexo, 'M' %> Masculino<br />
-
-                    <%= f.radio_button :Fl_Sexo, 'F' %> Femenino<br />
-
-                </div>
-
-            </div>
-
-
-            <div class="form-group">
-                <label class="control-label col-sm-4"> Tipo de Documento </label>
-                <div class="col-sm-8">
-                    <select name ="user[Co_Identidad]" id= "Co_Identidad" type="text" placeholder="Co_identidad" class="form-control">
-                        <option>Tipo documento de identidad</option>
-                        <option value="dni">DNI</option>
-                        <option value="ruc">RUC</option>
-                        <option value="carnet">Carnet de extranjeria</option>
-                    </select>
+<%= form_for  :user, :url => { :action => :create}, html: { class: "form-horizontal"} do |f| %>
 
 
 
-                </div>
-            </div>
+<div class="form-group">
+    <label class="control-label col-sm-4">Nombres </label>
+    <div class="col-sm-8">
+        <%= f.text_field :No_Nombres, placeholder:"Ingrese nombres", class:"form-control" %>
 
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Documento</label>
-                <div class="col-sm-8">          
-                    <%= f.text_field :No_Documento, placeholder:"Ingrese Nro. Documento", class:"form-control" %>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" for="email">Correo</label>
-                <div class="col-sm-8">          
-                    <%= f.text_field :No_Correo, placeholder:"Ingrese Correo", class:"form-control" %>
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <label class="control-label col-sm-4" >Contraseña</label>
-                <div class="col-sm-8">          
-                    <%= f.password_field :Pw_Contrasenia, placeholder:"Ingrese contraseña", class:"form-control" %>
-                    <%= f.hidden_field :Co_TipoUsuario, value: 02 %>
-                </div>
-            </div>
-
-
-
-            <div class="form-group">        
-                <div class="col-sm-offset-1 col-sm-6">
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Acepta los </label><a href=""> términos y condiciones </a>
-                    </div>
-                </div>
-
-                <div class="col-sm-offset-8 ">
-                    <div class="checkbox">
-                        <label><input type="checkbox"> No soy robot</label>
-                    </div>
-                </div>
-
-                <div class="form-group"> 
-                    <div style="margin-top:10px" > </div>       
-                    <div class="col-sm-offset-4 col-sm-8">
-                        <a href="f.submit">
-                            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
-                        </a>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <% end %>
-            <!--     </form>-->
-        </div>
     </div>
 </div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Apellido Paterno</label>
+    <div class="col-sm-8">          
+        <%= f.text_field :No_ApellidoPaterno, placeholder:"Ingrese apellido Paterno", class:"form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Apellido Materno</label>
+    <div class="col-sm-8">          
+        <%= f.text_field :No_ApellidoMaterno, placeholder:"Ingrese apellido Materno", class:"form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Fecha de Nacimiento</label>
+    <div class="col-sm-8">          
+        <%= f.date_field :Fe_Nacimiento, placeholder:"Date of Birth", class:"form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Celular</label>
+    <div class="col-sm-8">          
+        <%= f.text_field :No_Celular, placeholder:"Ingrese Celular", class:"form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4">Sexo</label>
+
+    <div class="col-sm-6">
+        <%= f.radio_button :Fl_Sexo, 'M' %> Masculino<br />
+
+        <%= f.radio_button :Fl_Sexo, 'F' %> Femenino<br />
+
+    </div>
+
+</div>
+
+
+<div class="form-group">
+    <label class="control-label col-sm-4"> Tipo de Documento </label>
+    <div class="col-sm-8">
+        <select name ="user[Co_Identidad]" id= "Co_Identidad" type="text" placeholder="Co_identidad" class="form-control">
+            <option>Tipo documento de identidad</option>
+            <option value="dni">DNI</option>
+            <option value="ruc">RUC</option>
+            <option value="carnet">Carnet de extranjeria</option>
+        </select>
+
+
+
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Documento</label>
+    <div class="col-sm-8">          
+        <%= f.text_field :No_Documento, placeholder:"Ingrese Nro. Documento", class:"form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-4" for="email">Correo</label>
+    <div class="col-sm-8">          
+        <%= f.text_field :email, placeholder:"Ingrese Correo", class:"form-control" %>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label col-sm-4" >Contraseña</label>
+    <div class="col-sm-8">          
+        <%= f.password_field :password, placeholder:"Ingrese contraseña", class:"form-control" %>
+        <%= f.hidden_field :Co_TipoUsuario, value: 02 %>
+    </div>
+</div>
+
+
+
+<div class="form-group">        
+    <div class="col-sm-offset-1 col-sm-6">
+        <div class="checkbox">
+            <label><input type="checkbox"> Acepta los </label><a href=""> términos y condiciones </a>
+        </div>
+    </div>
+
+    <div class="col-sm-offset-8 ">
+        <div class="checkbox">
+            <label><input type="checkbox"> No soy robot</label>
+        </div>
+    </div>
+
+    <div class="form-group"> 
+        <div style="margin-top:10px" > </div>       
+        <div class="col-sm-offset-4 col-sm-8">
+            <a href="f.submit">
+                <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+            </a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<% end %>
+<!--     </form>-->

@@ -1,3 +1,23 @@
-<%= render 'form' %>
+<head>
+  <style>
+    body { background-color: #81BEF7; }
+  </style>
+</head>
+
+<% content_for :"head" do %>
+<title>Registro de Cliente</title>
+<% end %>
+
+<div class="container">
+    <h2 class="text-center">Registrar Cliente</h2>
+    <div class="col-sm-offset-2 col-sm-6">
+        <div class="panel-body">
+
+            <%= render 'form' %>
+
+
+        </div>
+    </div>
+</div>
 
 <%= link_to 'Retroceder', :action => :index %>
