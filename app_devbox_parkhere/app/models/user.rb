@@ -1,6 +1,6 @@
 class User < ApplicationRecord
         
-
+    has_secure_password
 #    validates :No_Nombres, :presence => { message: "es requerido" },
 #    :length => { :minimum => 2, :too_short => "Nombre no válido" }
 #
@@ -16,8 +16,5 @@ class User < ApplicationRecord
 #    validates :Fl_Sexo, :Fe_Nacimiento, absence: true
 #    validates :No_Correo, uniqueness: true
 #    validates :No_Documento, uniqueness: true
-
-
-  
 
 end
