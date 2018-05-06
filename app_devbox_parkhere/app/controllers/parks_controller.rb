@@ -35,14 +35,14 @@ class ParksController < ApplicationController
   def register_park
       @estacionamiento = Estacionamiento.new(estacionamiento_params)
       if @estacionamiento.save
-
+          redirect_to :action => :find
       end
   end
 
   def register_park_service
       @estacionamiento_servicio = EstacionamientoServicio.new(estacionamiento_servicio_params)
       if @estacionamiento_servicio.save
-
+          redirect_to :action => :find
       end
   end
 
